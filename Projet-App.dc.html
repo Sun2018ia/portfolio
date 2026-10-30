@@ -33,6 +33,15 @@ html{scroll-behavior:smooth}
 .chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
 .snap{scroll-snap-type:x mandatory;scrollbar-width:thin}.snap>*{scroll-snap-align:start}
 @media (prefers-reduced-motion: reduce){.kb,.marq,.flo{animation:none}}
+.fiche{position:relative;margin-top:-44px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;background:#FFFFFF;border-radius:20px;box-shadow:0 24px 50px -34px rgba(11,42,58,0.55),0 0 0 1px rgba(11,42,58,0.06)}
+.fiche>div{padding:22px 26px 24px;border-left:1.5px dashed #D5DEE2;min-width:0}
+.fiche>div:first-child{border-left:0}
+.fiche-k{font-size:13px;font-weight:600;color:#4A6170}
+.fiche-v{margin-top:10px;font-size:16px;line-height:1.45;font-weight:600;color:#0E2A3A}
+.fiche-tags{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.fiche-tags li{font-size:14px;font-weight:600;line-height:1.2;color:#0B4F6C;background:#EEF5F7;border-radius:8px;padding:7px 10px}
+@media (max-width:900px){.fiche{grid-template-columns:1fr 1fr}.fiche>div:nth-child(3){border-left:0}.fiche>div:nth-child(n+3){border-top:1.5px dashed #D5DEE2}}
+@media (max-width:520px){.fiche{grid-template-columns:1fr}.fiche>div{border-left:0 !important}.fiche>div:nth-child(n+2){border-top:1.5px dashed #D5DEE2}}
 </style>
 </helmet>
 <div style="background: #FFFCF7; color: #0E2A3A; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; overflow-x: hidden">
@@ -90,11 +99,11 @@ html{scroll-behavior:smooth}
 
 <!-- FICHE -->
 <section style="max-width: 1280px; margin: 0 auto; padding: 0 28px">
-<div style="margin-top: -44px; position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 16px">
-<div style="background: #FFFFFF; border-radius: 18px; padding: 20px 22px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45); border-top: 4px solid #C93F27"><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Modules</div><div style="margin-top: 8px; font-size: 15px; line-height: 1.5; font-weight: 500">UX design · IA UX</div></div>
-<div style="background: #FFFFFF; border-radius: 18px; padding: 20px 22px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45); border-top: 4px solid #0B7F84"><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Outils</div><div style="margin-top: 8px; font-size: 15px; line-height: 1.5; font-weight: 500">Figma Make · IA générative</div></div>
-<div style="background: #FFFFFF; border-radius: 18px; padding: 20px 22px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45); border-top: 4px solid #0B4F6C"><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Rôle</div><div style="margin-top: 8px; font-size: 15px; line-height: 1.5; font-weight: 500">Projet individuel : conception et réalisation</div></div>
-<div style="background: #FFFFFF; border-radius: 18px; padding: 20px 22px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45); border-top: 4px solid #A35F00"><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">École</div><div style="margin-top: 8px; font-size: 15px; line-height: 1.5; font-weight: 500">Digital Campus Paris 11ᵉ</div></div>
+<div class="fiche">
+<div><div class="fiche-k">Modules</div><ul class="fiche-tags"><li>UX design</li><li>IA UX</li></ul></div>
+<div><div class="fiche-k">Outils</div><ul class="fiche-tags"><li>Figma Make</li><li>IA générative</li></ul></div>
+<div><div class="fiche-k">Rôle</div><div class="fiche-v">Projet individuel : conception et réalisation</div></div>
+<div><div class="fiche-k">École</div><div class="fiche-v">Digital Campus Paris 11ᵉ</div></div>
 </div>
 </section>
 
