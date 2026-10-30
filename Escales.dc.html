@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Escales – Sonia EL HENDI</title>
+<script src="dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=JetBrains+Mono:wght@500&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFCF7}
+a{color:#0B7F84}a:hover{color:#0B4F6C}
+html{scroll-behavior:smooth}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes flo{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fly{0%{offset-distance:0%}100%{offset-distance:100%}}
+.kb{animation:kb 14s ease-in-out infinite alternate}
+.marq{animation:marq 38s linear infinite}
+.flo{animation:flo 6s ease-in-out infinite}
+.card{transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease}
+.card:hover{transform:translateY(-8px) rotate(-0.6deg);box-shadow:0 30px 60px -24px rgba(11,79,108,0.45)}
+.card:hover .zoom{transform:scale(1.08)}
+.zoom{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pol{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pol:hover{transform:rotate(0deg) scale(1.04) !important;z-index:9 !important}
+.btn{transition:transform .2s ease, box-shadow .2s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(201,63,39,0.6)}
+.ghost{transition:background .2s ease}.ghost:hover{background:rgba(255,255,255,0.22) !important}
+.navl{transition:color .2s ease}.navl:hover{color:#C93F27 !important}
+.chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.snap{scroll-snap-type:x mandatory;scrollbar-width:thin}.snap>*{scroll-snap-align:start}
+@media (prefers-reduced-motion: reduce){.kb,.marq,.flo{animation:none}}
+.lift{transition:transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s ease}
+.card:hover .lift{transform:translateY(-14px) scale(1.04);box-shadow:0 34px 60px -20px rgba(0,0,0,0.55) !important}
+@keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.prog{transform-origin:left;animation:prog 4.2s linear infinite}
+@media (prefers-reduced-motion: reduce){.prog{animation:none}}
+</style>
+</helmet>
+<div style="background: #FFFCF7; color: #0E2A3A; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; overflow-x: hidden">
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(255,252,247,0.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #E2E8EB">
+<div style="max-width: 1280px; margin: 0 auto; padding: 12px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px">
+<a href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; display: flex; align-items: center; gap: 12px">
+<span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: 18px">Sonia EL HENDI</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 15px">
+<a class="navl" href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Accueil</a>
+<a class="navl" href="A-propos.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">À propos</a>
+<a class="navl" href="Destinations.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Destinations</a>
+<a class="navl" href="Escales.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Escales</a>
+<a class="navl" href="Itineraire.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Itinéraire</a>
+<a class="navl" href="Bagages.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Bagages</a>
+<a class="navl" href="cv/index.html" target="_blank" rel="noopener" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Mon CV</a>
+<a class="btn" href="Contact.dc.html" style="text-decoration: none; margin-left: 8px; background: {{accent}}; color: #FFFFFF; font-weight: 700; border-radius: 999px; padding: 11px 20px">Contact</a>
+</nav>
+</div>
+</header>
+
+<section style="position: relative; overflow: hidden; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF">
+<img class="kb" src="assets/d8b42b5d7a4a860127ed030e33595a4e.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: 1">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,79,108,0.45) 0%, rgba(11,79,108,0.15) 45%, rgba(11,79,108,0) 70%)"></div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 56px 28px 64px">
+<nav aria-label="Fil d’Ariane" style="font-size: 14px; color: #DCEFF1"><a href="Main.dc.html" style="color: #DCEFF1; text-decoration: none">Accueil</a> / <span style="color: #FFFFFF; font-weight: 700">Escales</span></nav>
+<div style="margin-top: 24px; font-family: 'Caveat', cursive; font-size: 32px; color: #FFB547">Tableau des départs</div>
+<h1 style="margin: 4px 0 12px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 64px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; text-shadow: 0 2px 18px rgba(0,0,0,0.35)">Mes escales</h1>
+<p style="margin: 0; font-size: 19px; color: #E6F4F5; max-width: 640px; text-shadow: 0 1px 10px rgba(0,0,0,0.45)">Sept projets réalisés pendant ma formation, du site de voyage au prototype d’application.</p>
+<!-- Tableau des vols -->
+<div style="margin-top: 36px; border-radius: 18px; overflow-x: auto; background: rgba(8,40,56,0.72); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18)">
+<div style="min-width: 760px">
+<div style="display: grid; grid-template-columns: 110px 1.4fr 1.2fr 150px; gap: 16px; padding: 14px 22px; border-bottom: 1px solid rgba(255,255,255,0.15); font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #BFDDE2; font-weight: 600"><span>N°</span><span>Projet</span><span>Catégorie</span><span style="text-align: right"></span></div>
+<sc-for list="{{cards}}" as="p" hint-placeholder-count="6">
+<a href="{{p.file}}" style="display: grid; grid-template-columns: 110px 1.4fr 1.2fr 150px; gap: 16px; align-items: center; padding: 14px 22px; border-bottom: 1px solid rgba(255,255,255,0.1); text-decoration: none; color: #D6E8EE">
+<span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 15px; color: #FFB547; font-weight: 600">{{p.code}}</span>
+<span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 18px; font-weight: 700; color: #FFFFFF">{{p.title}}</span>
+<span style="font-size: 14px">{{p.cat}}</span>
+<span style="text-align: right; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #7FF0E0; font-weight: 600">Voir le projet →</span>
+</a>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1280px; margin: 0 auto; padding: 48px 28px 100px">
+<div role="group" aria-label="Filtrer les projets" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="4">
+<button type="button" onClick="{{f.pick}}" aria-pressed="{{f.pressed}}" style="min-height: 46px; padding: 0 18px; border-radius: 999px; border: 1px solid {{f.border}}; background: {{f.bg}}; color: {{f.color}}; cursor: pointer; font-family: 'DM Sans', system-ui, sans-serif; font-size: 15px; font-weight: 700">{{f.label}}</button>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr)); gap: 26px">
+<sc-for list="{{cards}}" as="p" hint-placeholder-count="6">
+<a class="card" href="{{p.file}}" style="text-decoration: none; color: #0E2A3A; background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 14px 40px -24px rgba(11,42,58,0.35); border: 1px solid #E2E8EB">
+<div style="position: relative; height: 260px; overflow: hidden">
+<img class="zoom" src="{{p.photo}}" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,79,108,0) 40%, rgba(11,79,108,0.3) 100%)"></div>
+<div class="flo" style="position: absolute; left: 26px; right: 26px; bottom: 18px; animation-delay: {{p.delay}}">
+<div class="lift" style="border-radius: 10px; overflow: hidden; background: #FFFFFF; box-shadow: 0 18px 40px -16px rgba(0,0,0,0.5)">
+<div aria-hidden="true" style="display: flex; gap: 5px; padding: 7px 10px; background: #F6F8F9; border-bottom: 1px solid #E2E8EB"><span style="width: 7px; height: 7px; border-radius: 50%; background: #FF6B5A"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #FFB547"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #2BB3A8"></span></div>
+<div style="position: relative; height: 140px; background: #F3F6F7">
+<sc-for list="{{p.shots}}" as="sh" hint-placeholder-count="4">
+<img src="{{sh.src}}" alt="Aperçu : {{p.title}}" style="position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: contain; opacity: {{sh.op}}; transition: opacity 0.8s ease">
+</sc-for>
+<span aria-hidden="true" class="prog" style="position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: {{accent}}"></span>
+</div>
+</div>
+</div>
+</div>
+<div style="padding: 22px 24px 26px; display: flex; flex-direction: column; flex: 1">
+<div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #0B7F84; font-weight: 600">{{p.cat}}</div>
+<h3 style="margin: 10px 0 0; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.01em">{{p.title}}</h3>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #4A6170">{{p.card}}</p>
+<span style="margin-top: auto; padding-top: 18px; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: {{accent}}">Embarquer <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</sc-for>
+</div>
+</section>
+
+<!-- PROCHAINE ETAPE -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 28px 90px">
+<div style="border-radius: 26px; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; padding: 40px 44px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<div style="max-width: 640px">
+<div style="font-family: 'Caveat', cursive; font-size: 30px; color: #FFB547">Prochaine étape</div>
+<div style="margin-top: 4px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 32px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em">Mon itinéraire</div>
+<p style="margin: 10px 0 0; font-size: 17px; line-height: 1.6; color: #E6F4F5">De Paris à la Guadeloupe : 36 ans de voyages, étape par étape.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="Itineraire.dc.html" style="display: inline-flex; align-items: center; gap: 10px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 16px 26px">Découvrir mon parcours <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+</div>
+<div style="margin-top: 14px"><a href="Destinations.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #0B7F84; font-weight: 700; text-decoration: none">← Destinations</a></div>
+</section>
+<footer style="background: #0B4F6C; color: #D6E8EE">
+<div style="max-width: 1280px; margin: 0 auto; padding: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 Sonia EL HENDI · Paris ✕ Pointe-à-Pitre</span>
+<span>Formation Chef de projet marketing digital · Digital Campus</span>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C93F27","options":["#C93F27","#0B7F84","#0B4F6C","#7A3FB8"]},"$preview":{"width":1440,"height":3300}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#C93F27';
+    const B = 'assets/';
+    const all = [
+      { file: "Projet-Tunisie.dc.html", code: "01", cat: "Voyage · Site web", title: "Empreintes de Tunisie", card: "Quatre immersions de 7 nuits, chacune associant un grand site historique et un plat de mémoire.", img: B + 'd3cf5fcc22bb18ca10812b67e3ecef3a.jpg', photo: B + 'ecf1f795a0a55b3ae344ee4305c61be0.jpg', shots: [B + 'd3cf5fcc22bb18ca10812b67e3ecef3a.jpg', B + '4dc0711b9b9f9e78cef5f60ee428571a.jpg', B + '95f27108a275a2f1062734bb7a4895de.jpg', B + 'e76878e167bec26b5057d80d891139cf.jpg'], mods: ["Voyage & tourisme", "Sites WordPress"] },
+      { file: "Projet-App.dc.html", code: "02", cat: "Voyage · UX / UI & IA", title: "Tounes", card: "Une application pour découvrir la Tunisie région par région, conçue avec l’IA dans Figma Make.", img: B + 'aa0a9092bb5c0fc232456f2aa95d2567.jpg', photo: B + '1435a5052951608412b40fcea733c082.jpg', shots: [B + 'aa0a9092bb5c0fc232456f2aa95d2567.jpg', B + '29418cb3975675e4ca9b35f067dd14c5.jpg', B + 'fa572345d5b0a0738033e1306c1d060c.jpg', B + '5ebb337b886281fde5c351ea5b9fad12.jpg'], mods: ["Voyage & tourisme", "UX / UI & IA"] },
+      { file: "Projet-Sonigo.dc.html", code: "03", cat: "Voyage · Recherche UX", title: "Sonigo", card: "Recherche, benchmark et cadrage d’une appli qui relie voyageurs francophones et guides locaux en Pologne.", img: B + 'f269b20c2f5cdcb496513b6e0ee00e18.jpg', photo: B + '6b6062e69d0f057074d555d307d48fe1.jpg', shots: [B + 'f269b20c2f5cdcb496513b6e0ee00e18.jpg', B + '813bbf5f9d20ab2299e784e6dbd8e62e.jpg', B + '85ec83fa403cd550aa479977b89cebff.jpg', B + '71db9edef2ba7b404e9747c983aeafaf.jpg'], mods: ["Voyage & tourisme", "UX / UI & IA"] },
+      { file: "Projet-Montval.dc.html", code: "04", cat: "Audit UX · Accessibilité", title: "Signal’Montval", card: "Tests, audit et prototype pour que chaque habitant puisse signaler un problème en moins de 3 minutes.", img: B + '20298ac938d9cd4dbf0050e24cef3a07.jpg', photo: B + 'b7608120b5c87699beb0d84d90626b2b.jpg', shots: [B + '6de74eacec43e0b4b5607ab4dd079ba1.jpg', B + 'edefbab2912c5ee0d14c10270b30ff38.jpg', B + 'ce00fae85bfb9a926c1ecd6a07520f39.jpg', B + '687d879497045c744e13e44c030c1a10.jpg'], mods: ["UX / UI & IA"] },
+      { file: "Projet-Prestige.dc.html", code: "05", cat: "Tourisme · Site web & IA", title: "Maison Prestige", card: "Un site de location de voitures de luxe en Guadeloupe, livrées à l’aéroport, à l’hôtel ou à domicile.", img: B + '5e0825531d495f8d6741aa24fa8c08c5.jpg', photo: B + '68ba0ab05d6518b45e55eb8d7b255811.jpg', shots: [B + '5e0825531d495f8d6741aa24fa8c08c5.jpg', B + 'ad10628a57f2aa8f5236ad8df61325b7.jpg', B + '4dde3889fda2693d7ccb49f83d588fe9.jpg', B + '8798c043323a49025fffdb18c7245d2a.jpg'], mods: ["Voyage & tourisme", "UX / UI & IA"] },
+      { file: "Projet.dc.html", code: "06", cat: "Site WordPress", title: "Éditions Lisière", card: "Le site d’une maison d’édition indépendante, validé par un cahier de recette.", img: B + 'e2f89289fdb9d86c3afc82d33e8b0755.jpg', photo: B + '81605882795af31a5d6a123a2fcd7d9c.jpg', shots: [B + '8605bb98abea1af12087a370d3d2060e.jpg', B + '42bf8f93bc10677ba074dd3120ea2f86.jpg', B + 'e2f89289fdb9d86c3afc82d33e8b0755.jpg', B + '60de39f034552b24de3712702ded76ec.jpg'], mods: ["Sites WordPress"] },
+      { file: "Projet-Comptoir.dc.html", code: "07", cat: "Site WordPress", title: "Le Comptoir Vert", card: "Un site one page pour une épicerie bio et vrac de proximité.", img: B + 'c4b3104cda6152e4f65b5fcc20aace20.jpg', photo: B + 'cdc372b281c7d7b68ed3ff291f9d5183.jpg', shots: [B + 'c4b3104cda6152e4f65b5fcc20aace20.jpg', B + '2f17048b48a6815d46707a5a2812efb1.jpg', B + 'ae4967a95b7592c9ee6f45f0b03755c8.jpg', B + '336bae31783ad15c6ede48097ecf70e0.jpg'], mods: ["Sites WordPress"] }
+    ];
+    const labels = ["Toutes", "Voyage & tourisme", "Sites WordPress", "UX / UI & IA"];
+    const cur = (this.state && this.state.f) || 'Toutes';
+    const t = (this.state && this.state.t) || 0;
+    return {
+      accent,
+      filters: labels.map((l) => ({ label: l, pressed: l === cur ? 'true' : 'false', bg: l === cur ? accent : '#FFFFFF', color: l === cur ? '#FFFFFF' : '#0E2A3A', border: l === cur ? accent : '#E2E8EB', pick: () => this.setState({ f: l }) })),
+      cards: all.filter((c) => cur === 'Toutes' || c.mods.includes(cur)).map((p, j) => ({ ...p, delay: (j * 0.7) + 's', shots: p.shots.map((src, k) => ({ src, op: k === (t + j) % p.shots.length ? 1 : 0 })) }))
+    };
+  }
+  componentDidMount() {
+    this.timer = setInterval(() => this.setState((st) => ({ t: (((st && st.t) || 0) + 1) % 12 })), 4200);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+}
+</script>
+</body>
+</html>

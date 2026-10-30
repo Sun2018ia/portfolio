@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Itinéraire – Sonia EL HENDI</title>
+<script src="dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=JetBrains+Mono:wght@500&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFCF7}
+a{color:#0B7F84}a:hover{color:#0B4F6C}
+html{scroll-behavior:smooth}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes flo{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fly{0%{offset-distance:0%}100%{offset-distance:100%}}
+.kb{animation:kb 14s ease-in-out infinite alternate}
+.marq{animation:marq 38s linear infinite}
+.flo{animation:flo 6s ease-in-out infinite}
+.card{transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease}
+.card:hover{transform:translateY(-8px) rotate(-0.6deg);box-shadow:0 30px 60px -24px rgba(11,79,108,0.45)}
+.card:hover .zoom{transform:scale(1.08)}
+.zoom{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pol{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pol:hover{transform:rotate(0deg) scale(1.04) !important;z-index:9 !important}
+.btn{transition:transform .2s ease, box-shadow .2s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(201,63,39,0.6)}
+.ghost{transition:background .2s ease}.ghost:hover{background:rgba(255,255,255,0.22) !important}
+.navl{transition:color .2s ease}.navl:hover{color:#C93F27 !important}
+.chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.snap{scroll-snap-type:x mandatory;scrollbar-width:thin}.snap>*{scroll-snap-align:start}
+@media (prefers-reduced-motion: reduce){.kb,.marq,.flo{animation:none}}
+.trk-card{background:#0B2A3A;color:#FFFFFF;border-radius:28px;padding:28px 28px 30px;box-shadow:0 40px 80px -46px rgba(11,42,58,0.8)}
+.trk-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin-bottom:10px}
+.trk-status{display:inline-flex;align-items:center;gap:10px;min-height:40px;padding:0 16px;border-radius:999px;background:rgba(255,255,255,0.07);font-size:14px;font-weight:700}
+.trk-status i{width:8px;height:8px;border-radius:50%;animation:trkPulse 1.6s ease-in-out infinite}
+@keyframes trkPulse{0%,100%{box-shadow:0 0 0 0 currentColor}50%{box-shadow:0 0 0 6px transparent}}
+.trk-replay{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,0.25);background:transparent;color:#FFFFFF;font:700 14px 'DM Sans',system-ui,sans-serif;cursor:pointer;transition:background .2s ease}
+.trk-replay:hover{background:rgba(255,255,255,0.1)}
+.trk-replay:focus-visible,.trk-stop:focus-visible{outline:2px solid #FFB547;outline-offset:3px}
+.trk-map{overflow-x:auto;margin:0 -8px;padding:0 8px;scrollbar-width:thin}
+.trk-map svg{display:block;width:100%;min-width:720px;height:auto}
+.trk-stops{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:800px){.trk-stops{grid-template-columns:repeat(2,1fr)}}
+.trk-stop{width:100%;height:100%;text-align:left;padding:14px 16px;border-radius:14px;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;transition:background .3s ease,border-color .3s ease}
+.trk-stop:hover{background:rgba(255,255,255,0.09) !important}
+.trk-det{margin-top:22px;display:grid;grid-template-columns:5fr 7fr;gap:12px 40px;padding:26px 4px 0;border-top:1px solid rgba(255,255,255,0.12);animation:trkIn .5s cubic-bezier(.2,.8,.2,1) both}
+@media (max-width:800px){.trk-det{grid-template-columns:1fr}}
+@keyframes trkIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.trk-det{animation:none}.trk-status i{animation:none}}
+</style>
+</helmet>
+<div style="background: #FFFCF7; color: #0E2A3A; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; overflow-x: hidden">
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(255,252,247,0.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #E2E8EB">
+<div style="max-width: 1280px; margin: 0 auto; padding: 12px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px">
+<a href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; display: flex; align-items: center; gap: 12px">
+<span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: 18px">Sonia EL HENDI</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 15px">
+<a class="navl" href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Accueil</a>
+<a class="navl" href="A-propos.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">À propos</a>
+<a class="navl" href="Destinations.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Destinations</a>
+<a class="navl" href="Escales.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Escales</a>
+<a class="navl" href="Itineraire.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Itinéraire</a>
+<a class="navl" href="Bagages.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Bagages</a>
+<a class="navl" href="cv/index.html" target="_blank" rel="noopener" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Mon CV</a>
+<a class="btn" href="Contact.dc.html" style="text-decoration: none; margin-left: 8px; background: {{accent}}; color: #FFFFFF; font-weight: 700; border-radius: 999px; padding: 11px 20px">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section style="position: relative; overflow: hidden; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF">
+<img class="kb" src="assets/88bee0ce29435d2c8de388cdf3a8fe6b.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 1">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,79,108,0.45) 0%, rgba(11,79,108,0.15) 45%, rgba(11,79,108,0) 70%)"></div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 56px 28px 64px">
+<nav aria-label="Fil d’Ariane" style="font-size: 14px; color: #DCEFF1"><a href="Main.dc.html" style="color: #DCEFF1; text-decoration: none">Accueil</a> / <span style="color: #FFFFFF; font-weight: 700">Itinéraire</span></nav>
+<div style="margin-top: 24px; font-family: 'Caveat', cursive; font-size: 32px; color: #FFB547">Itinéraire</div>
+<h1 style="margin: 4px 0 12px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 58px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; text-shadow: 0 2px 18px rgba(0,0,0,0.4)">Mon parcours, étape par étape</h1>
+<p style="margin: 0; font-size: 19px; color: #E6F4F5; max-width: 680px; text-shadow: 0 1px 10px rgba(0,0,0,0.45)">De Paris à la Guadeloupe, 36 ans de voyages et une nouvelle compétence.</p>
+</div>
+</section>
+
+<!-- ITINERAIRE -->
+<section id="itineraire" style="max-width: 1280px; margin: 0 auto; padding: 64px 28px 90px">
+<div class="trk-card">
+<div class="trk-top">
+<div style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 22px; font-weight: 800; letter-spacing: -0.01em">Suivi de vol</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<span class="trk-status" aria-live="polite" style="color: {{stColor}}"><i style="background: {{stColor}}"></i><span style="color: #FFFFFF">{{status}}</span></span>
+<button type="button" class="trk-replay" onClick="{{replay}}">Revoir le vol</button>
+</div>
+</div>
+<div class="trk-map">
+<svg viewBox="0 0 1200 345" role="img" aria-label="Trajectoire de vol : décollage à Paris en 1990, escale à Pointe-à-Pitre en 2013, correspondance à Paris en avril 2026, arrivée en décembre 2026">
+<defs><pattern id="trkgrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"></path></pattern>
+<linearGradient id="trkfade" x1="0" x2="1"><stop offset="0" stop-color="#FF7A59"></stop><stop offset="0.5" stop-color="#2EC4B6"></stop><stop offset="0.85" stop-color="#7CC4E8"></stop><stop offset="1" stop-color="#FFB547"></stop></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="345" fill="url(#trkgrid)"></rect>
+<line x1="20" y1="280" x2="1180" y2="280" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" stroke-dasharray="2 6"></line>
+<path d="M70 280 C250 280 250 60 355 60 C460 60 460 280 640 280 C740 280 740 130 820 130 C900 130 900 280 1000 280 C1040 280 1040 200 1070 200 C1100 200 1100 280 1140 280" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="2" stroke-dasharray="5 7"></path>
+<path data-trk="prog" ref="{{setProg}}" d="M70 280 C250 280 250 60 355 60 C460 60 460 280 640 280 C740 280 740 130 820 130 C900 130 900 280 1000 280 C1040 280 1040 200 1070 200 C1100 200 1100 280 1140 280" fill="none" stroke="url(#trkfade)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="0 3000"></path>
+<path data-trk="route" ref="{{setRoute}}" d="M70 280 C250 280 250 60 355 60 C460 60 460 280 640 280 C740 280 740 130 820 130 C900 130 900 280 1000 280 C1040 280 1040 200 1070 200 C1100 200 1100 280 1140 280" fill="none" stroke="none"></path>
+<text x="355" y="44" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" font-weight="700" fill="#6F8D99">23 ans</text><text x="820" y="114" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" font-weight="700" fill="#6F8D99">13 ans</text><text x="1070" y="184" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" font-weight="700" fill="#6F8D99">8 mois</text>
+<g><circle cx="70" cy="280" r="11" fill="#FF7A59" opacity="0.18"></circle><circle cx="70" cy="280" r="5.5" fill="#0B2A3A" stroke="#FF7A59" stroke-width="3"></circle><text x="70" y="312" text-anchor="middle" font-family="Sora, DM Sans, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">1990</text><text x="70" y="332" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#A9C2CC">Paris</text></g><g><circle cx="640" cy="280" r="11" fill="#2EC4B6" opacity="0.18"></circle><circle cx="640" cy="280" r="5.5" fill="#0B2A3A" stroke="#2EC4B6" stroke-width="3"></circle><text x="640" y="312" text-anchor="middle" font-family="Sora, DM Sans, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">2013</text><text x="640" y="332" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#A9C2CC">Pointe-à-Pitre</text></g><g><circle cx="1000" cy="280" r="11" fill="#7CC4E8" opacity="0.18"></circle><circle cx="1000" cy="280" r="5.5" fill="#0B2A3A" stroke="#7CC4E8" stroke-width="3"></circle><text x="1000" y="312" text-anchor="middle" font-family="Sora, DM Sans, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">Avril 2026</text><text x="1000" y="332" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#A9C2CC">Paris</text></g><g><circle cx="1140" cy="280" r="11" fill="#FFB547" opacity="0.18"></circle><circle cx="1140" cy="280" r="5.5" fill="#0B2A3A" stroke="#FFB547" stroke-width="3"></circle><text x="1140" y="312" text-anchor="end" font-family="Sora, DM Sans, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">Déc. 2026</text><text x="1140" y="332" text-anchor="end" font-family="DM Sans, sans-serif" font-size="13" fill="#A9C2CC">Arrivée</text></g>
+<g data-trk="plane" ref="{{setPlane}}" transform="translate(70 272)"><g transform="scale(1.35)"><path d="M18 0 C18 -3 14 -4 10 -4 L-14 -4 L-19 -12 L-23 -12 L-20 -3 C-22 -2 -22 2 -19 3 L10 4 C14 4 18 3 18 0 Z" fill="#FFFFFF"></path><path d="M3 1 L-7 10 L-3 10 L9 1 Z" fill="#A9C2CC"></path><circle cx="12" cy="-1" r="1.3" fill="#0B2A3A"></circle></g></g>
+</svg>
+</div>
+<ol class="trk-stops">
+<sc-for list="{{stops}}" as="st" hint-placeholder-count="4">
+<li><button type="button" class="trk-stop" onClick="{{st.go}}" aria-pressed="{{st.pressed}}" style="background: {{st.bg}}; border: 1px solid {{st.border}}; color: #FFFFFF"><span style="display: block; font-size: 13px; font-weight: 700; color: {{st.c}}">{{st.date}}</span><span style="display: block; margin-top: 4px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 17px; font-weight: 700">{{st.t}}</span></button></li>
+</sc-for>
+</ol>
+<sc-for list="{{stops}}" as="st" hint-placeholder-count="1">
+<sc-if value="{{st.on}}" hint-placeholder-val="{{ true }}">
+<div class="trk-det">
+<div>
+<div style="font-size: 14px; font-weight: 700; color: {{st.c}}">{{st.date}}</div>
+<h2 style="margin: 6px 0 6px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 34px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF">{{st.t}}</h2>
+<div style="font-size: 17px; font-weight: 700; color: #C7D8DE">{{st.s}}</div>
+</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C7D8DE; max-width: 640px">{{st.d}}</p>
+</div>
+</sc-if>
+</sc-for>
+</div>
+</section>
+
+<!-- PROCHAINE ETAPE -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 28px 90px">
+<div style="border-radius: 26px; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; padding: 40px 44px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<div style="max-width: 640px">
+<div style="font-family: 'Caveat', cursive; font-size: 30px; color: #FFB547">Prochaine étape</div>
+<div style="margin-top: 4px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 32px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em">Mes bagages</div>
+<p style="margin: 10px 0 0; font-size: 17px; line-height: 1.6; color: #E6F4F5">Les compétences du tourisme et du digital que j’emporte dans chaque projet.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="Bagages.dc.html" style="display: inline-flex; align-items: center; gap: 10px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 16px 26px">Ouvrir ma valise <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+</div>
+<div style="margin-top: 14px"><a href="Escales.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #0B7F84; font-weight: 700; text-decoration: none">← Escales</a></div>
+</section>
+<footer style="background: #0B4F6C; color: #D6E8EE">
+<div style="max-width: 1280px; margin: 0 auto; padding: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 Sonia EL HENDI · Paris ✕ Pointe-à-Pitre</span>
+<span>Formation Chef de projet marketing digital · Digital Campus</span>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C93F27","options":["#C93F27","#0B7F84","#0B4F6C","#7A3FB8"]},"$preview":{"width":1440,"height":4600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const data = [
+      { date: "1990", t: "Décollage à Paris", s: "23 ans de tourisme en métropole", c: "#FF7A59", st: "Décollage : Paris, 1990", city: "Paris", d: "Toute la chaîne du voyage : production sur mesure, programmes aériens, compagnie aérienne, voyages d’affaires, réceptif en Tunisie, e-tourisme. Republic Tours, Planète, VVF, Europ Airpost, Jet Tours, Karavel, American Express, Thomas Cook…" },
+      { date: "2013", t: "Commandante de bord", s: "Responsable d’agence en Guadeloupe", c: "#2EC4B6", st: "Escale : Pointe-à-Pitre, 2013", city: "Pointe-à-Pitre", d: "Redressement commercial d’une agence en centre commercial avec une équipe de 4 à 5 collaboratrices, puis développement de l’agence de Pointe-à-Pitre : de 523 000 € à 1,7 M€ de chiffre d’affaires en sept ans, et 8 collaboratrices accompagnées." },
+      { date: "Avril 2026", t: "Correspondance", s: "Digital Campus Paris", c: "#7CC4E8", st: "Correspondance : Paris, avril 2026", city: "Paris", d: "Formation Chef de projet marketing digital du 21 avril au 30 octobre 2026, puis stage jusqu’au 30 décembre 2026." },
+      { date: "Décembre 2026", t: "Arrivée", s: "Double compétence tourisme & digital", c: "#FFB547", st: "Arrivée prévue : décembre 2026", city: "la double compétence", d: "Fin de la formation et du stage : 36 ans de terrain, enrichis des outils du marketing digital." }
+    ];
+    const sel = (this.state && this.state.sel) || 0;
+    const fly = this.state && this.state.flying;
+    const dest = (this.state && this.state.dest) || 0;
+    if (!this._rr) {
+      this._rr = (el) => { this.route = el; };
+      this._rp = (el) => { this.prog = el; };
+      this._rpl = (el) => { this.plane = el; };
+    }
+    return {
+      accent: this.props.accent ?? '#C93F27',
+      setRoute: this._rr, setProg: this._rp, setPlane: this._rpl,
+      status: fly ? 'En vol vers ' + data[dest].city : data[sel].st,
+      stColor: fly ? data[dest].c : data[sel].c,
+      replay: () => this.tour(true),
+      stops: data.map((x, j) => ({ ...x, on: j === sel, pressed: j === sel ? 'true' : 'false', bg: j === sel ? 'rgba(255,255,255,0.08)' : 'transparent', border: j === sel ? x.c : 'rgba(255,255,255,0.14)', go: () => { this.tok = (this.tok || 0) + 1; this.fly(j); } }))
+    };
+  }
+  place(l, back) {
+    const r = this.route, total = this.total;
+    if (!r || !this.plane) return;
+    const p = r.getPointAtLength(l);
+    const a = r.getPointAtLength(Math.max(0, l - 1)), b = r.getPointAtLength(Math.min(total, l + 1));
+    let ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+    if (back) ang += 180;
+    this.plane.setAttribute('transform', 'translate(' + p.x.toFixed(1) + ' ' + (p.y - 8).toFixed(1) + ') rotate(' + ang.toFixed(1) + ')');
+    if (this.prog) { this.prog.style.strokeDasharray = total; this.prog.style.strokeDashoffset = total - l; }
+  }
+  fly(to, done) {
+    this.grab();
+    const R = [0, 0.5134, 0.8476, 1];
+    if (!this.route || !this.route.getTotalLength) { this.setState({ sel: to, flying: false }); if (done) done(); return; }
+    this.total = this.route.getTotalLength();
+    const from = this.len || 0, target = R[to] * this.total;
+    cancelAnimationFrame(this.raf);
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || Math.abs(target - from) < 1) { this.len = target; this.place(target); this.setState({ sel: to, flying: false }); if (done) done(); return; }
+    const back = target < from;
+    const dur = Math.min(3200, 900 + Math.abs(target - from) * 2.4);
+    const t0 = performance.now();
+    this.setState({ flying: true, dest: to });
+    const step = (now) => {
+      const k = Math.min(1, (now - t0) / dur);
+      const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+      this.len = from + (target - from) * e;
+      this.place(this.len, back);
+      if (k < 1) { this.raf = requestAnimationFrame(step); }
+      else { this.place(target, false); this.setState({ sel: to, flying: false }); if (done) done(); }
+    };
+    this.raf = requestAnimationFrame(step);
+  }
+  tour(fromStart) {
+    const tok = this.tok = (this.tok || 0) + 1;
+    const run = (i) => {
+      if (tok !== this.tok || i > 3) return;
+      this.fly(i, () => { this.timer = setTimeout(() => run(i + 1), 2200); });
+    };
+    if (fromStart) { cancelAnimationFrame(this.raf); this.len = 0; this.place(0); this.setState({ sel: 0, flying: false }); this.timer = setTimeout(() => run(1), 1400); }
+    else run(1);
+  }
+  grab() {
+    if (this.route && this.plane) return;
+    try {
+      const q = (k) => document.querySelector('[data-trk="' + k + '"]');
+      this.route = this.route || q('route'); this.prog = this.prog || q('prog'); this.plane = this.plane || q('plane');
+    } catch (e) {}
+  }
+  componentDidMount() {
+    this.timer = setTimeout(() => { this.grab(); this.total = this.route && this.route.getTotalLength ? this.route.getTotalLength() : 0; this.place(0); this.tour(false); }, 1200);
+  }
+  componentWillUnmount() { clearTimeout(this.timer); cancelAnimationFrame(this.raf); this.tok = -1; }
+}
+</script>
+</body>
+</html>

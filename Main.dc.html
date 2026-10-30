@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Portfolio – Sonia EL HENDI</title>
+<script src="dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=JetBrains+Mono:wght@500&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFCF7}
+a{color:#0B7F84}a:hover{color:#0B4F6C}
+html{scroll-behavior:smooth}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes flo{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fly{0%{offset-distance:0%}100%{offset-distance:100%}}
+.kb{animation:kb 14s ease-in-out infinite alternate}
+.marq{animation:marq 38s linear infinite}
+.flo{animation:flo 6s ease-in-out infinite}
+.card{transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease}
+.card:hover{transform:translateY(-8px) rotate(-0.6deg);box-shadow:0 30px 60px -24px rgba(11,79,108,0.45)}
+.card:hover .zoom{transform:scale(1.08)}
+.zoom{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pol{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pol:hover{transform:rotate(0deg) scale(1.04) !important;z-index:9 !important}
+.btn{transition:transform .2s ease, box-shadow .2s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(201,63,39,0.6)}
+.ghost{transition:background .2s ease}.ghost:hover{background:rgba(255,255,255,0.22) !important}
+.navl{transition:color .2s ease}.navl:hover{color:#C93F27 !important}
+.chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.snap{scroll-snap-type:x mandatory;scrollbar-width:thin}.snap>*{scroll-snap-align:start}
+@media (prefers-reduced-motion: reduce){.kb,.marq,.flo{animation:none}}
+.lift{transition:transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s ease}
+.card:hover .lift{transform:translateY(-14px) scale(1.04);box-shadow:0 34px 60px -20px rgba(0,0,0,0.55) !important}
+@keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@property --n{syntax:'<integer>';initial-value:0;inherits:false}
+@keyframes cnt{from{--n:0}to{--n:var(--to)}}
+@keyframes fillbar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:1040px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.stats{grid-template-columns:1fr}}
+.stat{position:relative;overflow:hidden;border-radius:24px;padding:24px 24px 26px;transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease}
+.stat:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(11,42,58,0.45)}
+.stat::before{content:"";position:absolute;right:-12px;top:-12px;width:150px;height:150px;background-image:radial-gradient(currentColor 1.4px, transparent 1.6px);background-size:14px 14px;opacity:.13;pointer-events:none}
+.ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.stat:hover .ico{transform:rotate(-8deg) scale(1.08)}
+.num{counter-reset:n var(--n);animation:cnt 1.9s cubic-bezier(.2,.8,.2,1) .2s both}
+.num::after{content:counter(n)}
+.bar{height:6px;border-radius:999px;margin-top:16px;overflow:hidden}
+.bar>i{display:block;height:100%;border-radius:999px;transform-origin:left;animation:fillbar 1.9s cubic-bezier(.2,.8,.2,1) .2s both}
+@supports (animation-timeline: view()){.num,.bar>i,.trk>i{animation-timeline:view();animation-range:entry 0% cover 35%;animation-delay:0s}}
+.gauge{position:relative;margin-top:18px}
+.trk{position:relative;height:8px;border-radius:999px}
+.trk>i{position:absolute;top:0;bottom:0;border-radius:999px;transform-origin:left;animation:fillbar 1.9s cubic-bezier(.2,.8,.2,1) .2s both}
+.trk>b{position:absolute;top:-5px;width:3px;height:18px;border-radius:2px;margin-left:-1px;z-index:2}
+.gl{position:relative;height:16px;margin-top:7px;font-size:12px;line-height:16px;font-weight:700}
+.gl>span{position:absolute;top:0;white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion: reduce){.num,.bar>i,.trk>i{animation:none}.num{counter-reset:n var(--to)}}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:34px 30px}
+@media (max-width:980px){.cards{grid-template-columns:1fr}}
+.pc{--a:#C93F27;position:relative;padding:7px;border-radius:6px;background:repeating-linear-gradient(135deg,#C93F27 0 12px,#FFFDF8 12px 19px,#0B4F6C 19px 31px,#FFFDF8 31px 38px);box-shadow:0 22px 44px -26px rgba(14,42,58,0.55),0 2px 6px rgba(14,42,58,0.08);transform:rotate(var(--r,0deg));transition:transform .55s cubic-bezier(.2,.8,.2,1), box-shadow .55s ease}
+.pc:hover{transform:rotate(0deg) translateY(-8px);box-shadow:0 34px 60px -28px rgba(14,42,58,0.6),0 2px 6px rgba(14,42,58,0.08)}
+.pc-in{display:grid;grid-template-columns:1.1fr 1px 1fr;gap:0 26px;min-height:250px;padding:24px 26px 22px;border-radius:2px;background:#FFFDF8;background-image:radial-gradient(rgba(14,42,58,0.035) 1px,transparent 1.2px);background-size:5px 5px}
+.pc-sep{background:linear-gradient(#D9D3C7,#D9D3C7) center/1px 100% no-repeat}
+.pc-k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:#8A8274}
+.pc-n{margin-top:12px;font-family:'Sora','DM Sans',system-ui,sans-serif;font-size:64px;line-height:.95;font-weight:800;letter-spacing:-0.04em;color:var(--a)}
+.pc-n small{font-size:24px;letter-spacing:-0.01em;margin-left:6px}
+.pc-msg{margin-top:14px;font-family:'Caveat',cursive;font-size:27px;line-height:1.15;color:#26406E;transform:rotate(-1.5deg);transform-origin:left}
+.pc-r{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding-top:104px}
+.stamp{position:absolute;top:0;right:0;width:74px;height:90px;padding:5px;box-sizing:border-box;background:radial-gradient(circle,#FFFDF8 2.6px,transparent 3px) -5px -5px/10px 10px,#FFFFFF;filter:drop-shadow(0 2px 3px rgba(0,0,0,0.12));transform:rotate(3deg)}
+.stamp>div{height:100%;box-sizing:border-box;background:var(--a);color:#FFFFFF;display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:5px 2px;text-align:center;font-size:8px;letter-spacing:.14em;font-weight:700;text-transform:uppercase}
+.stamp b{font-family:'Sora','DM Sans',system-ui,sans-serif;font-size:19px;letter-spacing:-0.02em;line-height:1}
+.pm{position:absolute;top:6px;right:40px;width:170px;height:100px;color:#26406E;opacity:.62;pointer-events:none;animation:stampin .7s cubic-bezier(.3,1.6,.5,1) .5s both}
+@keyframes stampin{from{opacity:0;transform:scale(1.5) rotate(-14deg)}to{opacity:.62;transform:scale(1) rotate(-8deg)}}
+.addr{margin:0;padding:0;list-style:none}
+.addr li{display:flex;align-items:baseline;gap:10px;border-bottom:1.5px dotted #CFC7B8;padding:6px 0 3px;font-family:'Caveat',cursive;font-size:24px;line-height:1.1;color:#26406E}
+.addr li span{font-family:'DM Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#A69E90;min-width:30px}
+@supports (animation-timeline: view()){.pm{animation-timeline:view();animation-range:entry 10% cover 40%;animation-delay:0s}}
+@media (prefers-reduced-motion: reduce){.pm{animation:none;transform:rotate(-8deg)}.pc,.pc:hover{transition:none}}
+@media (max-width:560px){.pc-in{grid-template-columns:1fr;gap:20px 0}.pc-sep{display:none}.pc-n{font-size:54px}}
+.prog{transform-origin:left;animation:prog 4.2s linear infinite}
+@media (prefers-reduced-motion: reduce){.prog{animation:none}}
+</style>
+</helmet>
+<div style="background: #FFFCF7; color: #0E2A3A; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; overflow-x: hidden">
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(255,252,247,0.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #E2E8EB">
+<div style="max-width: 1280px; margin: 0 auto; padding: 12px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px">
+<a href="#accueil" style="text-decoration: none; color: #0E2A3A; display: flex; align-items: center; gap: 12px">
+<span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: 18px">Sonia EL HENDI</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 15px">
+<a class="navl" href="#accueil" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Accueil</a>
+<a class="navl" href="A-propos.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">À propos</a>
+<a class="navl" href="Destinations.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Destinations</a>
+<a class="navl" href="Escales.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Escales</a>
+<a class="navl" href="Itineraire.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Itinéraire</a>
+<a class="navl" href="Bagages.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Bagages</a>
+<a class="navl" href="cv/index.html" target="_blank" rel="noopener" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Mon CV</a>
+<a class="btn" href="Contact.dc.html" style="text-decoration: none; margin-left: 8px; background: {{accent}}; color: #FFFFFF; font-weight: 700; border-radius: 999px; padding: 11px 20px">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="accueil" style="position: relative; overflow: hidden; background: #0B4F6C">
+<video src="assets/87031e4616d0a2dcbb722d82cdce4abd.mp4" poster="assets/4753f74f4c08d00dcb3892bc2e086c80.jpg" ref="{{videoRef}}" autoplay="" muted="" loop="" playsinline="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></video>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(110deg, rgba(11,79,108,0.5) 0%, rgba(11,79,108,0.18) 40%, rgba(11,79,108,0) 65%)"></div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 88px 28px 96px; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 48px; align-items: center; color: #FFFFFF">
+<div>
+<h1 style="margin: 26px 0 22px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 58px; line-height: 1.05; font-weight: 800; letter-spacing: -0.035em; text-shadow: 0 2px 18px rgba(0,0,0,0.4)">L’expérience donne du sens aux idées.<br><span style="color: #FFB547">Le digital leur ouvre de nouveaux horizons.</span></h1>
+<p style="margin: 0 0 36px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 25px; line-height: 1.4; font-weight: 600; color: #FFFFFF; max-width: 620px; text-shadow: 0 1px 12px rgba(0,0,0,0.45)">Du tourisme à la communication digitale, je cultive le même goût pour les projets qui créent du lien et de l’émotion.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="Escales.dc.html" style="display: inline-flex; align-items: center; gap: 10px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 16px 26px">Voir mes projets <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="ghost" href="Destinations.dc.html" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.6); background: rgba(255,255,255,0.1); color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 15px 24px">Partir en voyage</a>
+</div>
+</div>
+<!-- Pile de photos -->
+<div style="position: relative; height: 560px">
+<sc-for list="{{deck}}" as="d" hint-placeholder-count="8">
+<figure class="pol" style="margin: 0; position: absolute; opacity: {{d.op}}; left: {{d.left}}; top: {{d.top}}; width: 360px; z-index: {{d.z}}; background: #FFFFFF; padding: 12px 12px 0; border-radius: 8px; box-shadow: 0 30px 60px -20px rgba(0,0,0,0.55); transform: rotate({{d.rot}}); transition: all 0.9s cubic-bezier(.2,.8,.2,1)">
+<div style="overflow: hidden; border-radius: 4px; aspect-ratio: 4 / 3"><img class="kb" src="{{d.src}}" alt="{{d.cap}}" style="display: block; width: 100%; height: 100%; object-fit: cover"></div>
+<figcaption style="font-family: 'Caveat', cursive; font-size: 26px; color: #0E2A3A; padding: 6px 4px 10px; display: flex; justify-content: space-between; align-items: baseline"><span>{{d.cap}}</span><span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #4A6170; font-weight: 600">{{d.geo}}</span></figcaption>
+</figure>
+</sc-for>
+<div class="flo" style="position: absolute; right: 0; bottom: -10px; width: 330px; z-index: 6">
+<div style="background: rgba(255,255,255,0.94); color: #0E2A3A; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 70px -30px rgba(0,0,0,0.6)">
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; background: {{accent}}; color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; font-weight: 600"><span>Carte d’embarquement</span><span>Vol DC-2026</span></div>
+<div style="padding: 16px 18px 6px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px">
+<div><div style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 36px; font-weight: 800; line-height: 1">PAR</div><div style="margin-top: 4px; font-size: 12px; color: #4A6170">Paris</div></div>
+<svg viewBox="0 0 160 40" style="width: 100%; height: 40px" aria-hidden="true"><path d="M4 34 Q80 -8 156 34" fill="none" stroke="#0B7F84" stroke-width="1.6" stroke-dasharray="4 5"></path><circle cx="4" cy="34" r="3.5" fill="#C93F27"></circle><circle cx="156" cy="34" r="3.5" fill="#0B7F84"></circle><g transform="translate(70 3) rotate(10)"><path d="M0 6 L16 6 L22 0 L24 1 L20 6 L26 6 L28 3 L30 3 L29 7 L30 11 L28 11 L26 8 L20 8 L24 13 L22 14 L16 8 L0 8 Z" fill="#0B4F6C"></path></g></svg>
+<div style="text-align: right"><div style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 36px; font-weight: 800; line-height: 1">PTP</div><div style="margin-top: 4px; font-size: 12px; color: #4A6170">Pointe-à-Pitre</div></div>
+</div>
+<div style="padding: 10px 18px 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; font-size: 14px">
+<div><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Passagère</div><div style="font-weight: 700">Sonia EL HENDI</div></div>
+<div><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">École</div><div style="font-weight: 700">Digital Campus Paris 11ᵉ</div></div>
+<div><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Départ</div><div style="font-family: 'DM Sans', system-ui, sans-serif; font-weight: 600">21.04.2026</div></div>
+<div><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Arrivée</div><div style="font-family: 'DM Sans', system-ui, sans-serif; font-weight: 600">30.12.2026</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 64px 28px 0">
+<div style="margin-bottom: 30px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px">
+<div style="font-family: 'Caveat', cursive; font-size: 34px; color: #C93F27; line-height: 1">Bons baisers du terrain</div>
+<div style="font-size: 14px; color: #4A6170">36 ans de voyages, en quatre cartes postales</div>
+</div>
+<div class="cards">
+<article class="pc" style="--a: #C93F27; --r: -1.2deg">
+<div class="pc-in">
+<div>
+<div class="pc-k">Carte postale · n° 1</div>
+<div class="pc-n"><span class="sr">36 ans</span><span aria-hidden="true"><span class="num" style="--to: 36"></span><small>ans</small></span></div>
+<p class="pc-msg" style="margin-bottom: 0">dans le tourisme, de 1990 à aujourd’hui.</p>
+</div>
+<div class="pc-sep" aria-hidden="true"></div>
+<div class="pc-r">
+<div class="stamp" aria-hidden="true"><div><span>RF</span><b>1990</b><span>Paris</span></div></div>
+<svg class="pm" viewBox="0 0 170 100" aria-hidden="true"><defs><path id="pm1" d="M18 50 A32 32 0 1 1 82 50"></path></defs><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="50" cy="50" r="27" fill="none" stroke="currentColor" stroke-width="1.2"></circle><text font-family="DM Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="1.6" fill="currentColor"><textPath href="#pm1" startOffset="50%" text-anchor="middle">PARIS · FRANCE</textPath></text><text x="50" y="56" text-anchor="middle" font-family="Sora, DM Sans, sans-serif" font-size="15" font-weight="800" fill="currentColor">1990</text><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M92 32 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 44 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 56 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 68 q9 -6 18 0 t18 0 t18 0 t18 0"></path></g></svg>
+<ul class="addr"><li><span>De</span>Paris, 1990</li><li><span>À</span>aujourd’hui</li><li><span>Via</span>toute la chaîne du voyage</li></ul>
+</div>
+</div>
+</article>
+<article class="pc" style="--a: #0B7F84; --r: 0.9deg">
+<div class="pc-in">
+<div>
+<div class="pc-k">Carte postale · n° 2</div>
+<div class="pc-n"><span class="sr">13 ans</span><span aria-hidden="true"><span class="num" style="--to: 13"></span><small>ans</small></span></div>
+<p class="pc-msg" style="margin-bottom: 0">à la tête d’une agence de voyages.</p>
+</div>
+<div class="pc-sep" aria-hidden="true"></div>
+<div class="pc-r">
+<div class="stamp" aria-hidden="true"><div><span>GP</span><b>2013</b><span>Antilles</span></div></div>
+<svg class="pm" viewBox="0 0 170 100" aria-hidden="true"><defs><path id="pm2" d="M18 50 A32 32 0 1 1 82 50"></path></defs><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="50" cy="50" r="27" fill="none" stroke="currentColor" stroke-width="1.2"></circle><text font-family="DM Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="1.6" fill="currentColor"><textPath href="#pm2" startOffset="50%" text-anchor="middle">POINTE-À-PITRE</textPath></text><text x="50" y="56" text-anchor="middle" font-family="Sora, DM Sans, sans-serif" font-size="15" font-weight="800" fill="currentColor">2013</text><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M92 32 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 44 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 56 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 68 q9 -6 18 0 t18 0 t18 0 t18 0"></path></g></svg>
+<ul class="addr"><li><span>Pour</span>mon agence</li><li><span>Lieu</span>Guadeloupe</li><li><span>Depuis</span>2013</li></ul>
+</div>
+</div>
+</article>
+<article class="pc" style="--a: #0B4F6C; --r: 0.7deg">
+<div class="pc-in">
+<div>
+<div class="pc-k">Carte postale · n° 3</div>
+<div class="pc-n"><span class="sr">×3</span><span aria-hidden="true">×<span class="num" style="--to: 3"></span></span></div>
+<p class="pc-msg" style="margin-bottom: 0">le chiffre d’affaires de l’agence en sept ans.</p>
+</div>
+<div class="pc-sep" aria-hidden="true"></div>
+<div class="pc-r">
+<div class="stamp" aria-hidden="true"><div><span>CA</span><b>×3</b><span>7 ans</span></div></div>
+<svg class="pm" viewBox="0 0 170 100" aria-hidden="true"><defs><path id="pm3" d="M18 50 A32 32 0 1 1 82 50"></path></defs><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="50" cy="50" r="27" fill="none" stroke="currentColor" stroke-width="1.2"></circle><text font-family="DM Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="1.6" fill="currentColor"><textPath href="#pm3" startOffset="50%" text-anchor="middle">GUADELOUPE</textPath></text><text x="50" y="56" text-anchor="middle" font-family="Sora, DM Sans, sans-serif" font-size="15" font-weight="800" fill="currentColor">7 ANS</text><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M92 32 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 44 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 56 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 68 q9 -6 18 0 t18 0 t18 0 t18 0"></path></g></svg>
+<ul class="addr"><li><span>De</span>523 k€</li><li><span>À</span>1,7 M€</li><li><span>En</span>sept ans</li></ul>
+</div>
+</div>
+</article>
+<article class="pc" style="--a: #A35F00; --r: -0.8deg">
+<div class="pc-in">
+<div>
+<div class="pc-k">Carte postale · n° 4</div>
+<div class="pc-n"><span class="sr">+18 %</span><span aria-hidden="true">+<span class="num" style="--to: 18"></span><small>%</small></span></div>
+<p class="pc-msg" style="margin-bottom: 0">au-dessus de mon objectif en 2025.</p>
+</div>
+<div class="pc-sep" aria-hidden="true"></div>
+<div class="pc-r">
+<div class="stamp" aria-hidden="true"><div><span>CA</span><b>2025</b><span>perso</span></div></div>
+<svg class="pm" viewBox="0 0 170 100" aria-hidden="true"><defs><path id="pm4" d="M18 50 A32 32 0 1 1 82 50"></path></defs><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="50" cy="50" r="27" fill="none" stroke="currentColor" stroke-width="1.2"></circle><text font-family="DM Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="1.6" fill="currentColor"><textPath href="#pm4" startOffset="50%" text-anchor="middle">GUADELOUPE</textPath></text><text x="50" y="56" text-anchor="middle" font-family="Sora, DM Sans, sans-serif" font-size="15" font-weight="800" fill="currentColor">2025</text><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M92 32 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 44 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 56 q9 -6 18 0 t18 0 t18 0 t18 0"></path><path d="M92 68 q9 -6 18 0 t18 0 t18 0 t18 0"></path></g></svg>
+<ul class="addr"><li><span>Objectif</span>dépassé</li><li><span>CA</span>1,1 M€ personnel</li><li><span>Année</span>2025</li></ul>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+<!-- VIDEO TOUR DU MONDE -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 100px 28px 0">
+<div style="text-align: center; margin-bottom: 32px">
+<div style="font-family: 'Caveat', cursive; font-size: 32px; color: #C93F27">Bulle après bulle</div>
+<h2 style="margin: 4px 0 10px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 42px; font-weight: 800; letter-spacing: -0.02em">Un tour du monde en 25 secondes</h2>
+<p style="margin: 0 auto; max-width: 620px; font-size: 17px; line-height: 1.6; color: #4A6170">Des lagons aux déserts, de Santorin à Sidi Bou Saïd : chaque bulle ouvre sur un nouveau paysage.</p>
+</div>
+<div style="position: relative; max-width: 1100px; margin: 0 auto; border-radius: 28px; overflow: hidden; background: #0B4F6C; box-shadow: 0 40px 90px -40px rgba(11,79,108,0.6); aspect-ratio: 16 / 9">
+<video src="assets/87031e4616d0a2dcbb722d82cdce4abd.mp4" poster="assets/4753f74f4c08d00dcb3892bc2e086c80.jpg" ref="{{videoRef}}" autoplay="" muted="" loop="" playsinline="" controls="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></video>
+</div>
+</section>
+
+<!-- CARNET -->
+<section id="carnet" style="max-width: 1280px; margin: 0 auto; padding: 110px 28px 0">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 64px; align-items: center">
+<div style="position: relative; height: 520px">
+<div style="position: absolute; left: 0; top: 30px; width: 62%; z-index: 1"><figure class="pol" style="margin: 0; background: #FFFFFF; padding: 10px 10px 0; border-radius: 6px; box-shadow: 0 24px 50px -18px rgba(11,42,58,0.45); transform: rotate(-6deg)">
+<img src="assets/f038e0ce1275182ee5e7a5622bda283d.jpg" alt="Médina de Hammamet" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px">
+<figcaption style="font-family: 'Caveat', cursive; font-size: 24px; color: #0E2A3A; padding: 6px 4px 8px">Médina de Hammamet</figcaption>
+</figure></div>
+<div style="position: absolute; right: 0; top: 0; width: 52%; z-index: 2"><figure class="pol" style="margin: 0; background: #FFFFFF; padding: 10px 10px 0; border-radius: 6px; box-shadow: 0 24px 50px -18px rgba(11,42,58,0.45); transform: rotate(5deg)">
+<img src="assets/141e37ad74fd48ee58faad9420c6cc1e.jpg" alt="Les Tatras" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px">
+<figcaption style="font-family: 'Caveat', cursive; font-size: 24px; color: #0E2A3A; padding: 6px 4px 8px">Les Tatras</figcaption>
+</figure></div>
+<div style="position: absolute; left: 22%; bottom: 0; width: 54%; z-index: 3"><figure class="pol" style="margin: 0; background: #FFFFFF; padding: 10px 10px 0; border-radius: 6px; box-shadow: 0 24px 50px -18px rgba(11,42,58,0.45); transform: rotate(-2deg)">
+<img src="assets/cdc372b281c7d7b68ed3ff291f9d5183.jpg" alt="Paris" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px">
+<figcaption style="font-family: 'Caveat', cursive; font-size: 24px; color: #0E2A3A; padding: 6px 4px 8px">Paris</figcaption>
+</figure></div>
+</div>
+<div>
+<h2 style="margin: 0px 0 24px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 42px; line-height: 1.12; font-weight: 800; letter-spacing: -0.02em">Faire voyager les gens, c’est mon métier. <span style="color: #0B7F84">Les faire rêver en ligne, ma nouvelle mission.</span></h2>
+<p style="margin: 0 0 24px; font-family: 'Caveat', cursive; font-size: 30px; line-height: 1.2; color: #C93F27">« L’expertise terrain sans le digital, c’est un moteur sans carburant. »</p>
+<p style="margin: 0 0 24px; font-size: 17px; line-height: 1.8; color: #4A6170">J’ai exercé sur toute la chaîne touristique : production de séjours, voyages sur mesure pour individuels et groupes, gestion transport et yield management, supervision à destination comme représentante exclusive de VVF Vacances en Tunisie. Depuis 2013, je dirige une agence de voyages en Guadeloupe : j’ai d’abord redressé une agence en centre commercial, puis développé une agence en ville. Ce parcours m’a appris à lire un marché, à fidéliser une clientèle exigeante et à piloter une performance commerciale dans la durée. Le digital, c’est le levier pour amplifier ce que je sais déjà faire.</p>
+<div style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 14px; background: #EEF7F6; border-radius: 16px; padding: 16px 20px">
+<span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 20px; font-weight: 700">Paris → Guadeloupe</span>
+<span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 13px; color: #4A6170; font-weight: 600">23 ans à Paris · 13 ans en Guadeloupe</span>
+</div>
+<div style="margin-top: 22px"><a class="btn" href="A-propos.dc.html" style="display: inline-flex; align-items: center; gap: 10px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 14px 22px">Lire mon histoire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div>
+</div>
+</div>
+</section>
+
+<!-- ESCALES -->
+<section id="escales" style="background: #EEF7F6; margin-top: 90px; padding: 100px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 28px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 36px">
+<div>
+<h2 style="margin: 0px 0 0; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 42px; font-weight: 800; letter-spacing: -0.02em">Les projets de ma formation</h2>
+</div>
+<a href="Escales.dc.html" style="display: inline-flex; align-items: center; gap: 8px; background: #FFFFFF; color: #0E2A3A; text-decoration: none; border-radius: 999px; padding: 13px 20px; font-weight: 700; border: 1px solid #E2E8EB">Tableau des départs <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 26px">
+<sc-for list="{{projects}}" as="p" hint-placeholder-count="6">
+<a class="card" href="{{p.file}}" style="text-decoration: none; color: #0E2A3A; background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 14px 40px -24px rgba(11,42,58,0.35); border: 1px solid #E2E8EB">
+<div style="position: relative; height: 260px; overflow: hidden">
+<img class="zoom" src="{{p.photo}}" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,79,108,0) 40%, rgba(11,79,108,0.3) 100%)"></div>
+<div class="flo" style="position: absolute; left: 26px; right: 26px; bottom: 18px; animation-delay: {{p.delay}}">
+<div class="lift" style="border-radius: 10px; overflow: hidden; background: #FFFFFF; box-shadow: 0 18px 40px -16px rgba(0,0,0,0.5)">
+<div aria-hidden="true" style="display: flex; gap: 5px; padding: 7px 10px; background: #F6F8F9; border-bottom: 1px solid #E2E8EB"><span style="width: 7px; height: 7px; border-radius: 50%; background: #FF6B5A"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #FFB547"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #2BB3A8"></span></div>
+<div style="position: relative; height: 140px; background: #F3F6F7">
+<sc-for list="{{p.shots}}" as="sh" hint-placeholder-count="4">
+<img src="{{sh.src}}" alt="Aperçu : {{p.title}}" style="position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: contain; opacity: {{sh.op}}; transition: opacity 0.8s ease">
+</sc-for>
+<span aria-hidden="true" class="prog" style="position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: {{accent}}"></span>
+</div>
+</div>
+</div>
+</div>
+<div style="padding: 22px 24px 26px; display: flex; flex-direction: column; flex: 1">
+<div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #0B7F84; font-weight: 600">{{p.cat}}</div>
+<h3 style="margin: 10px 0 0; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.01em">{{p.title}}</h3>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #4A6170">{{p.card}}</p>
+<span style="margin-top: auto; padding-top: 18px; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: {{accent}}">Embarquer <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</div>
+</a>
+</sc-for>
+</div>
+</div>
+</section>
+
+<footer style="background: #0B4F6C; color: #D6E8EE">
+<div style="max-width: 1280px; margin: 0 auto; padding: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 Sonia EL HENDI · Paris ✕ Pointe-à-Pitre</span>
+<span>Formation Chef de projet marketing digital · Digital Campus</span>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C93F27","options":["#C93F27","#0B7F84","#0B4F6C","#7A3FB8"]},"$preview":{"width":1440,"height":6200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const B = 'assets/';
+    const projs = [
+      { file: "Projet-Tunisie.dc.html", code: "01", cat: "Voyage · Site web", title: "Empreintes de Tunisie", card: "Quatre immersions de 7 nuits, chacune associant un grand site historique et un plat de mémoire.", img: B + 'd3cf5fcc22bb18ca10812b67e3ecef3a.jpg', photo: B + 'ecf1f795a0a55b3ae344ee4305c61be0.jpg', shots: [B + 'd3cf5fcc22bb18ca10812b67e3ecef3a.jpg', B + '4dc0711b9b9f9e78cef5f60ee428571a.jpg', B + '95f27108a275a2f1062734bb7a4895de.jpg', B + 'e76878e167bec26b5057d80d891139cf.jpg'], mods: ["Voyage & tourisme", "Sites WordPress"] },
+      { file: "Projet-App.dc.html", code: "02", cat: "Voyage · UX / UI & IA", title: "Tounes", card: "Une application pour découvrir la Tunisie région par région, conçue avec l’IA dans Figma Make.", img: B + 'aa0a9092bb5c0fc232456f2aa95d2567.jpg', photo: B + '1435a5052951608412b40fcea733c082.jpg', shots: [B + 'aa0a9092bb5c0fc232456f2aa95d2567.jpg', B + '29418cb3975675e4ca9b35f067dd14c5.jpg', B + 'fa572345d5b0a0738033e1306c1d060c.jpg', B + '5ebb337b886281fde5c351ea5b9fad12.jpg'], mods: ["Voyage & tourisme", "UX / UI & IA"] },
+      { file: "Projet-Sonigo.dc.html", code: "03", cat: "Voyage · Recherche UX", title: "Sonigo", card: "Recherche, benchmark et cadrage d’une appli qui relie voyageurs francophones et guides locaux en Pologne.", img: B + 'f269b20c2f5cdcb496513b6e0ee00e18.jpg', photo: B + '6b6062e69d0f057074d555d307d48fe1.jpg', shots: [B + 'f269b20c2f5cdcb496513b6e0ee00e18.jpg', B + '813bbf5f9d20ab2299e784e6dbd8e62e.jpg', B + '85ec83fa403cd550aa479977b89cebff.jpg', B + '71db9edef2ba7b404e9747c983aeafaf.jpg'], mods: ["Voyage & tourisme", "UX / UI & IA"] },
+      { file: "Projet-Montval.dc.html", code: "04", cat: "Audit UX · Accessibilité", title: "Signal’Montval", card: "Tests, audit et prototype pour que chaque habitant puisse signaler un problème en moins de 3 minutes.", img: B + '20298ac938d9cd4dbf0050e24cef3a07.jpg', photo: B + 'b7608120b5c87699beb0d84d90626b2b.jpg', shots: [B + '6de74eacec43e0b4b5607ab4dd079ba1.jpg', B + 'edefbab2912c5ee0d14c10270b30ff38.jpg', B + 'ce00fae85bfb9a926c1ecd6a07520f39.jpg', B + '687d879497045c744e13e44c030c1a10.jpg'], mods: ["UX / UI & IA"] },
+      { file: "Projet-Prestige.dc.html", code: "05", cat: "Tourisme · Site web & IA", title: "Maison Prestige", card: "Un site de location de voitures de luxe en Guadeloupe, livrées à l’aéroport, à l’hôtel ou à domicile.", img: B + '5e0825531d495f8d6741aa24fa8c08c5.jpg', photo: B + '68ba0ab05d6518b45e55eb8d7b255811.jpg', shots: [B + '5e0825531d495f8d6741aa24fa8c08c5.jpg', B + 'ad10628a57f2aa8f5236ad8df61325b7.jpg', B + '4dde3889fda2693d7ccb49f83d588fe9.jpg', B + '8798c043323a49025fffdb18c7245d2a.jpg'], mods: ["Voyage & tourisme", "UX / UI & IA"] },
+      { file: "Projet.dc.html", code: "06", cat: "Site WordPress", title: "Éditions Lisière", card: "Le site d’une maison d’édition indépendante, validé par un cahier de recette.", img: B + 'e2f89289fdb9d86c3afc82d33e8b0755.jpg', photo: B + '81605882795af31a5d6a123a2fcd7d9c.jpg', shots: [B + '8605bb98abea1af12087a370d3d2060e.jpg', B + '42bf8f93bc10677ba074dd3120ea2f86.jpg', B + 'e2f89289fdb9d86c3afc82d33e8b0755.jpg', B + '60de39f034552b24de3712702ded76ec.jpg'], mods: ["Sites WordPress"] },
+      { file: "Projet-Comptoir.dc.html", code: "07", cat: "Site WordPress", title: "Le Comptoir Vert", card: "Un site one page pour une épicerie bio et vrac de proximité.", img: B + 'c4b3104cda6152e4f65b5fcc20aace20.jpg', photo: B + 'cdc372b281c7d7b68ed3ff291f9d5183.jpg', shots: [B + 'c4b3104cda6152e4f65b5fcc20aace20.jpg', B + '2f17048b48a6815d46707a5a2812efb1.jpg', B + 'ae4967a95b7592c9ee6f45f0b03755c8.jpg', B + '336bae31783ad15c6ede48097ecf70e0.jpg'], mods: ["Sites WordPress"] }
+    ];
+    const D = [
+      { src: B + '97509391b897108193b6df1dae7a2ed1.jpg', cap: "Bord de mer, Tunisie", geo: "" },
+      { src: B + '141e37ad74fd48ee58faad9420c6cc1e.jpg', cap: "Les Tatras, Pologne", geo: "49°14′N" },
+      { src: B + 'f038e0ce1275182ee5e7a5622bda283d.jpg', cap: "Médina de Hammamet", geo: "" },
+      { src: B + '6b6062e69d0f057074d555d307d48fe1.jpg', cap: "Cracovie, Pologne", geo: "50°03′N" },
+      { src: B + '90cb9c13b635852cda82d8774cec8ec4.jpg', cap: "Souk, Tunisie", geo: "" },
+      { src: B + 'e88fb7fcf998716d270a8be6bbbd85e6.jpg', cap: "Gdańsk, Pologne", geo: "54°21′N" },
+      { src: B + 'cdc372b281c7d7b68ed3ff291f9d5183.jpg', cap: "Paris, France", geo: "48°51′N" },
+      { src: B + 'b7608120b5c87699beb0d84d90626b2b.jpg', cap: "Varsovie, Pologne", geo: "52°13′N" }
+    ];
+    const n = D.length;
+    const i = (this.state && this.state.i) || 0;
+    const P = [
+      { left: '40px', top: '90px', rot: '-3deg', z: 5, op: 1 },
+      { left: '160px', top: '30px', rot: '6deg', z: 4, op: 1 },
+      { left: '0px', top: '0px', rot: '-9deg', z: 3, op: 1 }
+    ];
+    const hidden = { left: '80px', top: '40px', rot: '0deg', z: 1, op: 0 };
+    const gone = { left: '460px', top: '160px', rot: '16deg', z: 6, op: 0 };
+    return {
+      accent: this.props.accent ?? '#C93F27',
+      videoRef: this.videoRef || (this.videoRef = (el) => { if (el) { el.muted = true; const p = el.play && el.play(); if (p && p.catch) p.catch(() => {}); } }),
+      projects: projs.map((p, j) => ({ ...p, delay: (j * 0.7) + 's', shots: p.shots.map((src, k) => ({ src, op: k === (i + j) % p.shots.length ? 1 : 0 })) })),
+      deck: D.map((d, k) => { const r = (k - i + n) % n; return { ...d, ...(r < 3 ? P[r] : (r === n - 1 ? gone : hidden)) }; })
+    };
+  }
+  componentDidMount() {
+    this.timer = setInterval(() => this.setState((st) => ({ i: (((st && st.i) || 0) + 1) % 8 })), 4200);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+}
+</script>
+</body>
+</html>

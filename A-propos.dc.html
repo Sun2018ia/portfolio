@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>À propos de moi – Sonia EL HENDI</title>
+<script src="dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=JetBrains+Mono:wght@500&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFCF7}
+a{color:#0B7F84}a:hover{color:#0B4F6C}
+html{scroll-behavior:smooth}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes flo{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fly{0%{offset-distance:0%}100%{offset-distance:100%}}
+.kb{animation:kb 14s ease-in-out infinite alternate}
+.marq{animation:marq 38s linear infinite}
+.flo{animation:flo 6s ease-in-out infinite}
+.card{transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease}
+.card:hover{transform:translateY(-8px) rotate(-0.6deg);box-shadow:0 30px 60px -24px rgba(11,79,108,0.45)}
+.card:hover .zoom{transform:scale(1.08)}
+.zoom{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pol{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pol:hover{transform:rotate(0deg) scale(1.04) !important;z-index:9 !important}
+.btn{transition:transform .2s ease, box-shadow .2s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(201,63,39,0.6)}
+.ghost{transition:background .2s ease}.ghost:hover{background:rgba(255,255,255,0.22) !important}
+.navl{transition:color .2s ease}.navl:hover{color:#C93F27 !important}
+.chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.snap{scroll-snap-type:x mandatory;scrollbar-width:thin}.snap>*{scroll-snap-align:start}
+@media (prefers-reduced-motion: reduce){.kb,.marq,.flo{animation:none}}
+.ap-wrap{display:grid;grid-template-columns:5fr 7fr;gap:48px;align-items:stretch}
+@media (max-width:960px){.ap-wrap{grid-template-columns:1fr;gap:28px}}
+.ap-tabs{display:flex;flex-direction:column;justify-content:center}
+.ap-tab{position:relative;display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(255,255,255,0.12);padding:22px 0 22px 26px;cursor:pointer;font-family:'Sora','DM Sans',system-ui,sans-serif;font-size:26px;line-height:1.2;font-weight:700;letter-spacing:-0.015em;transition:color .3s ease,padding .4s cubic-bezier(.2,.8,.2,1)}
+.ap-tab:first-child{border-top:1px solid rgba(255,255,255,0.12)}
+.ap-tab:hover{color:#FFFFFF !important;padding-left:32px}
+.ap-tab:focus-visible{outline:2px solid #FFB547;outline-offset:4px;border-radius:4px}
+.ap-tab>i{position:absolute;left:0;top:22px;bottom:22px;width:4px;border-radius:4px;transform-origin:top;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.ap-screen{position:relative;border-radius:20px;padding:40px 40px 36px;min-height:470px;box-sizing:border-box;background-color:#0F3547;background-image:linear-gradient(rgba(255,255,255,0.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.045) 1px,transparent 1px);background-size:28px 28px;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 40px 80px -40px rgba(0,0,0,0.6)}
+.ap-in{animation:apIn .55s cubic-bezier(.2,.8,.2,1) both}
+@keyframes apIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.ap-row{border-radius:14px;padding:18px 20px}
+.ap-lab{font-size:13px;font-weight:700;margin-bottom:6px}
+.ap-link{position:relative;height:46px;margin-left:30px;width:2px;background:repeating-linear-gradient(rgba(255,255,255,0.35) 0 4px,transparent 4px 8px)}
+.ap-link>b{position:absolute;left:-4px;top:0;width:10px;height:10px;border-radius:50%;animation:apTravel 1s cubic-bezier(.6,0,.3,1) .45s both}
+@keyframes apTravel{from{top:-4px;opacity:0}15%{opacity:1}to{top:calc(100% - 6px);opacity:1}}
+.ap-type{clip-path:inset(0 100% 0 0);animation:apReveal 1.2s cubic-bezier(.4,0,.2,1) 1.3s forwards}
+@keyframes apReveal{to{clip-path:inset(0 0 0 0)}}
+.ap-caret{display:inline-block;width:2px;height:1.05em;margin-left:3px;vertical-align:-0.15em;animation:apBlink 1s steps(1) infinite}
+@keyframes apBlink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.ap-in,.ap-link>b,.ap-type{animation:none;clip-path:none;opacity:1}.ap-link>b{top:calc(100% - 6px)}.ap-caret{animation:none}}
+@media (max-width:560px){.ap-screen{padding:28px 22px}.ap-tab{font-size:22px}}
+</style>
+</helmet>
+<div style="background: #FFFCF7; color: #0E2A3A; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; overflow-x: hidden">
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(255,252,247,0.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #E2E8EB">
+<div style="max-width: 1280px; margin: 0 auto; padding: 12px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px">
+<a href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; display: flex; align-items: center; gap: 12px">
+<span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: 18px">Sonia EL HENDI</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 15px">
+<a class="navl" href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Accueil</a>
+<a class="navl" href="A-propos.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">À propos</a>
+<a class="navl" href="Destinations.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Destinations</a>
+<a class="navl" href="Escales.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Escales</a>
+<a class="navl" href="Itineraire.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Itinéraire</a>
+<a class="navl" href="Bagages.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Bagages</a>
+<a class="navl" href="cv/index.html" target="_blank" rel="noopener" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Mon CV</a>
+<a class="btn" href="Contact.dc.html" style="text-decoration: none; margin-left: 8px; background: {{accent}}; color: #FFFFFF; font-weight: 700; border-radius: 999px; padding: 11px 20px">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section style="position: relative; overflow: hidden; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF">
+<img class="kb" src="assets/4ad4b5b933f9f71bfcf2c4ba2242c831.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 1">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,79,108,0.45) 0%, rgba(11,79,108,0.15) 45%, rgba(11,79,108,0) 70%)"></div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 56px 28px 96px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 56px; align-items: center">
+<div>
+<nav aria-label="Fil d’Ariane" style="font-size: 14px; color: #DCEFF1"><a href="Main.dc.html" style="color: #DCEFF1; text-decoration: none">Accueil</a> / <span style="color: #FFFFFF; font-weight: 700">À propos</span></nav>
+<div style="margin-top: 26px; font-family: 'Caveat', cursive; font-size: 34px; color: #FFB547">À propos de moi</div>
+<h1 style="margin: 6px 0 0; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 54px; line-height: 1.08; font-weight: 800; letter-spacing: -0.03em; text-shadow: 0 2px 18px rgba(0,0,0,0.35)">L’expérience du terrain, la curiosité du digital et le goût des projets qui ont du sens.</h1>
+</div>
+<div style="position: relative; height: 620px">
+<div style="position: absolute; right: 30px; top: 10px; width: 300px; z-index: 1"><figure class="pol" style="margin: 0; background: #FFFFFF; padding: 10px 10px 0; border-radius: 6px; box-shadow: 0 24px 50px -18px rgba(11,42,58,0.45); transform: rotate(8deg)">
+<img src="assets/97509391b897108193b6df1dae7a2ed1.jpg" alt="Bord de mer, Tunisie" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px">
+<figcaption style="font-family: 'Caveat', cursive; font-size: 24px; color: #0E2A3A; padding: 6px 4px 8px">Tunisie</figcaption>
+</figure></div>
+<div style="position: absolute; right: 10px; top: 255px; width: 200px; z-index: 3"><figure class="pol" style="margin: 0; background: #FFFFFF; padding: 10px 10px 0; border-radius: 6px; box-shadow: 0 28px 56px -18px rgba(0,0,0,0.55); transform: rotate(5deg)">
+<video src="assets/bb39d0cfd27eb10ec611b6a978a781fb.mp4" poster="assets/846681a30a6f34b7a969cb4e1eec8d36.jpg" controls playsinline preload="metadata" aria-label="Vidéo de présentation de Sonia EL HENDI" style="display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 3px; background: #0E2A3A"></video>
+<figcaption style="font-family: 'Caveat', cursive; font-size: 24px; color: #0E2A3A; padding: 6px 4px 8px">Ma vision en vidéo</figcaption>
+</figure></div>
+<div class="flo" style="position: absolute; left: 20px; top: 40px; width: 300px; z-index: 2"><figure class="pol" style="margin: 0; background: #FFFFFF; padding: 12px 12px 0; border-radius: 6px; box-shadow: 0 30px 60px -20px rgba(0,0,0,0.55); transform: rotate(-5deg)">
+<img src="assets/62ef631f4ae68b4ed9bd24072d395ce5.jpg" alt="Portrait de Sonia EL HENDI" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 3px">
+<figcaption style="font-family: 'Caveat', cursive; font-size: 28px; color: #0E2A3A; padding: 6px 4px 10px">Sonia</figcaption>
+</figure></div>
+</div>
+</div>
+</section>
+
+<!-- PARCOURS -->
+<section style="max-width: 900px; margin: 0 auto; padding: 96px 28px 0">
+<h2 style="margin: 0px 0 24px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.12; font-weight: 800; letter-spacing: -0.02em">36 ans dans l’univers du tourisme</h2>
+<p style="margin: 0 0 18px; font-size: 21px; line-height: 1.6; color: #0E2A3A">Depuis 36 ans, j’évolue dans l’univers du tourisme. Un secteur passionnant qui m’a appris à écouter, à anticiper, à organiser et surtout à comprendre ce qui fait la différence dans une expérience client.</p>
+<p style="margin: 0 0 18px; font-size: 17px; line-height: 1.8; color: #4A6170">De la conception de voyages sur mesure à la gestion des transports et des vols charters, jusqu’à mes fonctions de responsable d’agence en Guadeloupe, mon parcours s’est construit au fil des projets, des responsabilités et des rencontres. J’y ai développé une conviction qui m’accompagne encore aujourd’hui : derrière chaque réussite, il y a une bonne compréhension des besoins, une organisation solide et une attention sincère portée aux personnes.</p>
+</section>
+
+<!-- PERSPECTIVE -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 80px 28px 0">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 56px; align-items: center">
+<div>
+<h2 style="margin: 0px 0 24px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.12; font-weight: 800; letter-spacing: -0.02em">Une nouvelle perspective</h2>
+<p style="margin: 0 0 18px; font-size: 21px; line-height: 1.6; color: #0E2A3A">Aujourd’hui, j’élargis mon champ de compétences au marketing digital, à la communication et à l’intelligence artificielle.</p>
+<p style="margin: 0 0 18px; font-size: 17px; line-height: 1.8; color: #4A6170">Cette évolution n’est pas une rupture avec mon parcours. C’est une nouvelle manière de l’enrichir, de questionner mes habitudes et d’explorer d’autres façons de concevoir des projets, de créer du contenu et de valoriser une activité.</p>
+<p style="margin: 0 0 18px; font-size: 17px; line-height: 1.8; color: #4A6170">J’aime comprendre comment les outils fonctionnent, expérimenter, apprendre et transformer une idée en quelque chose de concret. La stratégie, la création de contenu, la conception web et les nouveaux usages de l’IA sont autant de terrains d’exploration qui nourrissent cette démarche.</p>
+</div>
+<figure style="margin: 0; position: relative; border-radius: 28px; overflow: hidden; min-height: 420px; display: flex; align-items: flex-end">
+<img class="kb" src="assets/141e37ad74fd48ee58faad9420c6cc1e.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,79,108,0) 35%, rgba(11,42,58,0.62) 100%)"></span>
+<blockquote style="position: relative; margin: 0; padding: 36px; color: #FFFFFF; text-shadow: 0 2px 14px rgba(0,0,0,0.55); font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 24px; line-height: 1.4; font-weight: 600">« Ce qui m’intéresse, ce n’est pas le digital pour le digital. C’est ce qu’il permet de construire lorsqu’il répond à un besoin réel et qu’il reste au service d’une intention. »</blockquote>
+</figure>
+</div>
+</section>
+
+<!-- APPORTS -->
+<section style="background: #0B2A3A; color: #FFFFFF; margin-top: 100px; padding: 96px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 28px">
+<h2 style="margin: 0 0 14px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.12; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF">Ce que j’apporte à un projet</h2>
+<p style="margin: 0 0 48px; max-width: 620px; font-size: 18px; line-height: 1.6; color: #A9C2CC">Quatre savoir-faire forgés en 36 ans de tourisme, que j’applique aujourd’hui aux projets digitaux. Choisissez-en un pour voir comment il passe du terrain à l’écran.</p>
+<div class="ap-wrap">
+<div class="ap-tabs" role="tablist" aria-label="Mes savoir-faire">
+<sc-for list="{{apports}}" as="q" hint-placeholder-count="4">
+<button type="button" class="ap-tab" role="tab" aria-selected="{{q.sel}}" onClick="{{q.pick}}" style="color: {{q.tc}}"><i style="background: {{q.c}}; transform: scaleY({{q.bar}})"></i>{{q.t}}</button>
+</sc-for>
+</div>
+<div class="ap-screen" role="tabpanel" aria-live="polite">
+<sc-for list="{{apports}}" as="q" hint-placeholder-count="1">
+<sc-if value="{{q.on}}" hint-placeholder-val="{{ true }}">
+<div class="ap-in">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 18px"><span style="width: 10px; height: 10px; border-radius: 50%; background: {{q.c}}; box-shadow: 0 0 0 6px {{q.glow}}"></span><span style="font-size: 14px; font-weight: 700; color: {{q.c}}">{{q.k}}</span></div>
+<h3 style="margin: 0 0 12px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 34px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF">{{q.t}}</h3>
+<p style="margin: 0 0 30px; max-width: 560px; font-size: 18px; line-height: 1.6; color: #C7D8DE">{{q.d}}</p>
+<div class="ap-row" style="background: rgba(255,255,255,0.06)">
+<div class="ap-lab" style="color: #A9C2CC">Sur le terrain</div>
+<div style="font-size: 17px; line-height: 1.55; color: #E6EEF1">{{q.a}}</div>
+</div>
+<div class="ap-link" aria-hidden="true"><b style="background: {{q.c}}; box-shadow: 0 0 12px {{q.c}}"></b></div>
+<div class="ap-row" style="background: {{q.glow}}; box-shadow: inset 0 0 0 1px {{q.c}}">
+<div class="ap-lab" style="color: {{q.c}}">En projet digital</div>
+<div class="ap-type" style="font-size: 17px; line-height: 1.55; color: #FFFFFF; font-weight: 500">{{q.g}}<span class="ap-caret" aria-hidden="true" style="background: {{q.c}}"></span></div>
+</div>
+</div>
+</sc-if>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<!-- VISION -->
+<section style="max-width: 900px; margin: 0 auto; padding: 96px 28px 0">
+<h2 style="margin: 0px 0 24px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 40px; line-height: 1.12; font-weight: 800; letter-spacing: -0.02em">Ma façon de voir les choses</h2>
+<p style="margin: 0 0 22px; padding-left: 20px; border-left: 3px solid #FFB547; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 24px; line-height: 1.45; font-weight: 600; color: #0B4F6C">Je crois aux projets qui associent réflexion et action, créativité et méthode, technologie et intelligence humaine.</p>
+<p style="margin: 0 0 18px; font-size: 17px; line-height: 1.8; color: #4A6170">L’intelligence artificielle ouvre des possibilités fascinantes, à condition de conserver le discernement nécessaire pour bien l’utiliser. Les outils peuvent nous aider à aller plus loin, mais la compréhension, le regard critique et la qualité de la relation restent essentiels.</p>
+<p style="margin: 0 0 18px; font-size: 17px; line-height: 1.8; color: #4A6170">C’est cette complémentarité qui m’intéresse : savoir tirer parti des nouvelles technologies tout en gardant ce qui a toujours guidé ma façon de travailler, l’écoute, l’exigence et le sens du concret.</p>
+</section>
+
+<!-- ET MAINTENANT -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 96px 28px 100px">
+<div style="border-radius: 30px; color: #FFFFFF; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 60%, #2BB3A8 100%); box-shadow: 0 40px 80px -46px rgba(11,42,58,0.7)">
+<div style="padding: 60px 56px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 44px 64px; align-items: start">
+<div>
+<div style="font-family: 'Caveat', cursive; font-size: 36px; line-height: 1; color: #FFB547">Et maintenant ?</div>
+<p style="margin: 18px 0 30px; font-size: 19px; line-height: 1.7; color: #EAF5F6">Place à la pratique. Après six mois de formation, je mets mes nouvelles compétences à l’épreuve du terrain, avec un objectif clair : faire dialoguer mon expertise du tourisme avec les possibilités du marketing digital et de l’IA.</p>
+<p style="margin: 0 0 34px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 30px; line-height: 1.3; font-weight: 700">Parce qu’évoluer, ce n’est pas effacer ce que l’on a construit. <span style="color: #FFB547">C’est s’en servir pour imaginer la suite.</span></p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="Escales.dc.html" style="display: inline-flex; align-items: center; gap: 10px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 16px 26px">Découvrir mes projets <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="ghost" href="cv/index.html" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.7); background: rgba(255,255,255,0.1); color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 15px 24px">Voir mon CV</a>
+</div>
+</div>
+<div style="background: rgba(11,42,58,0.28); border-radius: 22px; padding: 30px 30px 6px">
+<div style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 20px; font-weight: 800; margin-bottom: 22px">Mes prochaines étapes</div>
+<ol style="list-style: none; margin: 0; padding: 0"><li style="position: relative; padding: 0 0 26px 34px"><span aria-hidden="true" style="position: absolute; left: 7px; top: 22px; bottom: -6px; width: 2px; background: rgba(255,255,255,0.22)"></span><span aria-hidden="true" style="position: absolute; left: 0; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: #FFB547"></span><div style="font-size: 14px; font-weight: 700; color: #FFB547">30 octobre 2026</div><div style="margin-top: 2px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 19px; font-weight: 700; color: #FFFFFF">Fin de la formation théorique</div><div style="margin-top: 2px; font-size: 15px; line-height: 1.5; color: #CFE6EA">Chef de projet marketing digital, Digital Campus Paris</div></li><li style="position: relative; padding: 0 0 26px 34px"><span aria-hidden="true" style="position: absolute; left: 7px; top: 22px; bottom: -6px; width: 2px; background: rgba(255,255,255,0.22)"></span><span aria-hidden="true" style="position: absolute; left: 0; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: #0B4F6C; box-shadow: inset 0 0 0 3px #2EC4B6"></span><div style="font-size: 14px; font-weight: 700; color: #2EC4B6">Dès le 2 novembre</div><div style="margin-top: 2px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 19px; font-weight: 700; color: #FFFFFF">Stage en marketing digital</div><div style="margin-top: 2px; font-size: 15px; line-height: 1.5; color: #CFE6EA">Mettre en pratique, sur le terrain, tout ce que j’ai appris</div></li><li style="position: relative; padding: 0 0 26px 34px"><span aria-hidden="true" style="position: absolute; left: 0; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: #0B4F6C; box-shadow: inset 0 0 0 3px #7CC4E8"></span><div style="font-size: 14px; font-weight: 700; color: #7CC4E8">30 décembre 2026</div><div style="margin-top: 2px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 19px; font-weight: 700; color: #FFFFFF">Fin du stage</div><div style="margin-top: 2px; font-size: 15px; line-height: 1.5; color: #CFE6EA">La double compétence tourisme et digital, validée</div></li></ol>
+</div>
+</div>
+</div>
+</section>
+<footer style="background: #0B4F6C; color: #D6E8EE">
+<div style="max-width: 1280px; margin: 0 auto; padding: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 Sonia EL HENDI · Paris ✕ Pointe-à-Pitre</span>
+<span>Formation Chef de projet marketing digital · Digital Campus</span>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C93F27","options":["#C93F27","#0B7F84","#0B4F6C","#7A3FB8"]},"$preview":{"width":1440,"height":4600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const data = [
+      { t: "Une vision globale", k: "Voir loin", c: "#FF7A59", glow: "rgba(255,122,89,0.14)", d: "Comprendre les objectifs, prendre du recul et relier les différentes étapes d’un projet.", a: "Toute la chaîne du voyage, de la production de séjours à l’accueil à destination : chaque étape compte pour le client.", g: "Relier stratégie, contenus, site et acquisition dans un même plan, pour que chaque action serve l’objectif." },
+      { t: "Le sens du client", k: "Écouter d’abord", c: "#2EC4B6", glow: "rgba(46,196,182,0.14)", d: "Écouter, identifier les attentes et chercher la réponse la plus pertinente, plutôt que la solution la plus évidente.", a: "36 ans au contact des voyageurs, individuels comme groupes, dont 13 à fidéliser une clientèle exigeante en Guadeloupe.", g: "Des personas et des parcours utilisateurs construits à partir de vrais besoins, comme pour Maison Prestige." },
+      { t: "La rigueur opérationnelle", k: "Rien au hasard", c: "#7CC4E8", glow: "rgba(124,196,232,0.14)", d: "Anticiper, coordonner, gérer les priorités et veiller aux détails qui font la différence.", a: "Gestion des transports, yield management et pilotage commercial : objectif 2025 dépassé de 18 %.", g: "Rétroplanning, priorités et cahier de recette : livrer dans les temps, sans rien laisser au hasard." },
+      { t: "La curiosité et l’adaptabilité", k: "Toujours apprendre", c: "#FFB547", glow: "rgba(255,181,71,0.14)", d: "Explorer de nouveaux outils, expérimenter et apprendre en continu, sans perdre de vue le sens de ce que l’on construit.", a: "36 ans d’évolutions du métier, des brochures papier à l’e-tourisme.", g: "Figma, WordPress, Google Ads, IA générative : chaque outil testé en conditions réelles de projet." }
+    ];
+    const cur = (this.state && this.state.ap) || 0;
+    return {
+      accent: this.props.accent ?? '#C93F27',
+      apports: data.map((q, j) => ({ ...q, on: j === cur, sel: j === cur ? 'true' : 'false', tc: j === cur ? '#FFFFFF' : '#6F8D99', bar: j === cur ? 1 : 0, pick: () => this.setState({ ap: j }) }))
+    };
+  }
+}
+</script>
+</body>
+</html>

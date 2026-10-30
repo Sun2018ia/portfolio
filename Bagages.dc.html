@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Bagages – Sonia EL HENDI</title>
+<script src="dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=JetBrains+Mono:wght@500&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFCF7}
+a{color:#0B7F84}a:hover{color:#0B4F6C}
+html{scroll-behavior:smooth}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes flo{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fly{0%{offset-distance:0%}100%{offset-distance:100%}}
+.kb{animation:kb 14s ease-in-out infinite alternate}
+.marq{animation:marq 38s linear infinite}
+.flo{animation:flo 6s ease-in-out infinite}
+.card{transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease}
+.card:hover{transform:translateY(-8px) rotate(-0.6deg);box-shadow:0 30px 60px -24px rgba(11,79,108,0.45)}
+.card:hover .zoom{transform:scale(1.08)}
+.zoom{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pol{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pol:hover{transform:rotate(0deg) scale(1.04) !important;z-index:9 !important}
+.btn{transition:transform .2s ease, box-shadow .2s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(201,63,39,0.6)}
+.ghost{transition:background .2s ease}.ghost:hover{background:rgba(255,255,255,0.22) !important}
+.navl{transition:color .2s ease}.navl:hover{color:#C93F27 !important}
+.chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.snap{scroll-snap-type:x mandatory;scrollbar-width:thin}.snap>*{scroll-snap-align:start}
+@media (prefers-reduced-motion: reduce){.kb,.marq,.flo{animation:none}}
+.bagx{display:grid;grid-template-columns:5fr 7fr;gap:40px;align-items:center}
+.bagx+.bagx{margin-top:56px}
+.bagx.rev{grid-template-columns:7fr 5fr}
+.bagx.rev .bag-photo{order:2}
+@media (max-width:960px){.bagx,.bagx.rev{grid-template-columns:1fr;gap:28px}.bagx.rev .bag-photo{order:0}}
+.bag-photo{position:relative;margin:0;border-radius:28px;overflow:hidden;box-shadow:0 40px 70px -40px rgba(11,42,58,0.6)}
+.bag-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+@media (max-width:960px){.bag-photo{max-width:460px;margin:0 auto}}
+.pin{position:absolute;display:flex;align-items:center;gap:8px;transform:translate(-14px,-50%);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.pin i{position:relative;width:28px;height:28px;border-radius:50%;background:#FFFFFF;box-shadow:0 4px 14px rgba(0,0,0,0.35)}
+.pin i::before{content:"";position:absolute;inset:8px;border-radius:50%;background:currentColor}
+.pin i::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid #FFFFFF;opacity:0;animation:pinPulse 2.4s ease-out infinite}
+@keyframes pinPulse{0%{opacity:.9;transform:scale(.7)}100%{opacity:0;transform:scale(1.6)}}
+.pin b{background:#FFFFFF;color:#0E2A3A;border-radius:999px;padding:7px 13px;font-size:14px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,0.3)}
+.bagx:has(.pan:hover) .pin{transform:translate(-14px,-50%) scale(1.18)}
+.pan{border-radius:24px;padding:28px 30px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease}
+.pan:hover{transform:translateX(6px);box-shadow:-6px 0 0 0 currentColor}
+.pan-h{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.pan-dot{width:14px;height:14px;border-radius:50%;box-shadow:0 0 0 5px #FFFFFF}
+.pan ul{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.pan li{background:#FFFFFF;color:#0E2A3A;border-radius:999px;padding:8px 14px;font-size:15px;font-weight:500}
+.pan-x{margin-top:18px;padding-top:16px;border-top:1px dashed currentColor;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+@media (prefers-reduced-motion: reduce){.pin i::after{animation:none}.pan,.pan:hover,.pin{transition:none;transform:translate(-14px,-50%)}.pan:hover{transform:none}}
+</style>
+</helmet>
+<div style="background: #FFFCF7; color: #0E2A3A; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; overflow-x: hidden">
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(255,252,247,0.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #E2E8EB">
+<div style="max-width: 1280px; margin: 0 auto; padding: 12px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px">
+<a href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; display: flex; align-items: center; gap: 12px">
+<span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: 18px">Sonia EL HENDI</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 15px">
+<a class="navl" href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Accueil</a>
+<a class="navl" href="A-propos.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">À propos</a>
+<a class="navl" href="Destinations.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Destinations</a>
+<a class="navl" href="Escales.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Escales</a>
+<a class="navl" href="Itineraire.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Itinéraire</a>
+<a class="navl" href="Bagages.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Bagages</a>
+<a class="navl" href="cv/index.html" target="_blank" rel="noopener" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Mon CV</a>
+<a class="btn" href="Contact.dc.html" style="text-decoration: none; margin-left: 8px; background: {{accent}}; color: #FFFFFF; font-weight: 700; border-radius: 999px; padding: 11px 20px">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section style="position: relative; overflow: hidden; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF">
+<img class="kb" src="assets/6b6062e69d0f057074d555d307d48fe1.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; opacity: 1">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,79,108,0.45) 0%, rgba(11,79,108,0.15) 45%, rgba(11,79,108,0) 70%)"></div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 56px 28px 64px">
+<nav aria-label="Fil d’Ariane" style="font-size: 14px; color: #DCEFF1"><a href="Main.dc.html" style="color: #DCEFF1; text-decoration: none">Accueil</a> / <span style="color: #FFFFFF; font-weight: 700">Bagages</span></nav>
+<div style="margin-top: 24px; font-family: 'Caveat', cursive; font-size: 32px; color: #FFB547">Bagages</div>
+<h1 style="margin: 4px 0 12px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 58px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; text-shadow: 0 2px 18px rgba(0,0,0,0.35)">Ce que j’emporte dans ma valise</h1>
+<p style="margin: 0; font-size: 19px; color: #E6F4F5; max-width: 680px; text-shadow: 0 1px 10px rgba(0,0,0,0.45)">Les compétences du tourisme et du digital que j’emporte dans chaque projet.</p>
+</div>
+</section>
+
+<!-- BAGAGES -->
+<section id="bagages" style="max-width: 1280px; margin: 0 auto; padding: 64px 28px 90px">
+<div class="bagx">
+<figure class="bag-photo">
+<img src="assets/3ceb23394e4f896479fdd79ec1058446.jpg" alt="Une valise cabine champagne et un sac à main devant la baie vitrée d’un aéroport, au coucher du soleil" style="object-position: center 50%">
+</figure>
+<div class="pan pan-c" style="background: #FFF4E6; color: #C93F27">
+<div class="pan-h"><span class="pan-dot" style="background: #C93F27"></span><h2 style="margin: 0; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 26px; font-weight: 800; letter-spacing: -0.01em; color: #0E2A3A">Bagage cabine</h2><span style="font-size: 15px; font-weight: 700">Tourisme, 36 ans</span></div>
+<ul aria-label="Compétences tourisme"><li>Voyages sur mesure</li><li>Programmes aériens</li><li>Négociation fournisseurs</li><li>Direction d’agence</li><li>Management d’équipe</li><li>Gestion financière</li><li>Relation client</li></ul>
+<div class="pan-x"><span style="font-family: 'Caveat', cursive; font-size: 24px; line-height: 1">Je parle</span><span style="font-size: 15px; color: #4A6170">Français, anglais, espagnol, arabe tunisien</span></div>
+</div>
+</div>
+<div class="bagx rev">
+<figure class="bag-photo">
+<img src="assets/b92dc129c62d4825a21f2d03de2638e3.jpg" alt="Une grande valise dorée, une valise cabine et deux sacs en cuir cognac sur une terrasse face à la mer" style="object-position: center 60%">
+</figure>
+<div class="pan pan-s" style="background: #EEF7F6; color: #0B7F84">
+<div class="pan-h"><span class="pan-dot" style="background: #0B7F84"></span><h2 style="margin: 0; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 26px; font-weight: 800; letter-spacing: -0.01em; color: #0E2A3A">Bagage soute</h2><span style="font-size: 15px; font-weight: 700">Digital, 2026</span></div>
+<ul aria-label="Compétences digitales"><li>Gestion de projet digital</li><li>Brand content</li><li>UX / UI design</li><li>Conception web</li><li>Web marketing</li><li>SEO &amp; Google Ads</li><li>IA générative</li></ul>
+<div class="pan-x"><span style="font-family: 'Caveat', cursive; font-size: 24px; line-height: 1">Mes outils</span><span style="font-size: 15px; color: #4A6170">Figma, WordPress, Elementor, Canva, Notion, HTML/CSS, Google Analytics, Brevo, ChatGPT, Claude</span></div>
+</div>
+</div>
+</section>
+<section style="max-width: 1280px; margin: -40px auto 0; padding: 0 28px 90px">
+<div style="margin-top: 22px; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; border-radius: 22px; padding: 22px 26px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+<div><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; opacity: 0.9; font-weight: 600">Certification Google · juillet 2026</div><div style="margin-top: 2px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 20px; font-weight: 700">Google Ads – Réseau de Recherche</div></div>
+</div>
+</section>
+
+<!-- PROCHAINE ETAPE -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 28px 90px">
+<div style="border-radius: 26px; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; padding: 40px 44px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<div style="max-width: 640px">
+<div style="font-family: 'Caveat', cursive; font-size: 30px; color: #FFB547">Dernière étape</div>
+<div style="margin-top: 4px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 32px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em">Mon CV et mes coordonnées</div>
+<p style="margin: 10px 0 0; font-size: 17px; line-height: 1.6; color: #E6F4F5">Retrouvez mon parcours complet en deux pages, ou écrivez-moi.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="cv/index.html" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 16px 26px">Voir mon CV <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="ghost" href="Contact.dc.html" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.7); background: rgba(255,255,255,0.1); color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 15px 24px">Me contacter</a>
+</div>
+</div>
+<div style="margin-top: 14px"><a href="Itineraire.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; color: #0B7F84; font-weight: 700; text-decoration: none">← Itinéraire</a></div>
+</section>
+<footer style="background: #0B4F6C; color: #D6E8EE">
+<div style="max-width: 1280px; margin: 0 auto; padding: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 Sonia EL HENDI · Paris ✕ Pointe-à-Pitre</span>
+<span>Formation Chef de projet marketing digital · Digital Campus</span>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C93F27","options":["#C93F27","#0B7F84","#0B4F6C","#7A3FB8"]},"$preview":{"width":1440,"height":4600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#C93F27' };
+  }
+}
+</script>
+</body>
+</html>

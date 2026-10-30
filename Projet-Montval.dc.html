@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Escale – Signal’Montval</title>
+<script src="dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=JetBrains+Mono:wght@500&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFCF7}
+a{color:#0B7F84}a:hover{color:#0B4F6C}
+html{scroll-behavior:smooth}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes flo{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes fly{0%{offset-distance:0%}100%{offset-distance:100%}}
+.kb{animation:kb 14s ease-in-out infinite alternate}
+.marq{animation:marq 38s linear infinite}
+.flo{animation:flo 6s ease-in-out infinite}
+.card{transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease}
+.card:hover{transform:translateY(-8px) rotate(-0.6deg);box-shadow:0 30px 60px -24px rgba(11,79,108,0.45)}
+.card:hover .zoom{transform:scale(1.08)}
+.zoom{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pol{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pol:hover{transform:rotate(0deg) scale(1.04) !important;z-index:9 !important}
+.btn{transition:transform .2s ease, box-shadow .2s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(201,63,39,0.6)}
+.ghost{transition:background .2s ease}.ghost:hover{background:rgba(255,255,255,0.22) !important}
+.navl{transition:color .2s ease}.navl:hover{color:#C93F27 !important}
+.chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.snap{scroll-snap-type:x mandatory;scrollbar-width:thin}.snap>*{scroll-snap-align:start}
+@media (prefers-reduced-motion: reduce){.kb,.marq,.flo{animation:none}}
+</style>
+</helmet>
+<div style="background: #FFFCF7; color: #0E2A3A; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh; overflow-x: hidden">
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(255,252,247,0.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #E2E8EB">
+<div style="max-width: 1280px; margin: 0 auto; padding: 12px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px">
+<a href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; display: flex; align-items: center; gap: 12px">
+<span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: 18px">Sonia EL HENDI</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 15px">
+<a class="navl" href="Main.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Accueil</a>
+<a class="navl" href="A-propos.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">À propos</a>
+<a class="navl" href="Destinations.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Destinations</a>
+<a class="navl" href="Escales.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Escales</a>
+<a class="navl" href="Itineraire.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Itinéraire</a>
+<a class="navl" href="Bagages.dc.html" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Bagages</a>
+<a class="navl" href="cv/index.html" target="_blank" rel="noopener" style="text-decoration: none; color: #0E2A3A; padding: 12px 10px; font-weight: 500">Mon CV</a>
+<a class="btn" href="Contact.dc.html" style="text-decoration: none; margin-left: 8px; background: {{accent}}; color: #FFFFFF; font-weight: 700; border-radius: 999px; padding: 11px 20px">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section style="position: relative; overflow: hidden; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF">
+<img src="assets/b7608120b5c87699beb0d84d90626b2b.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 1">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,79,108,0.45) 0%, rgba(11,79,108,0.15) 45%, rgba(11,79,108,0) 70%)"></div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 48px 28px 90px">
+<nav aria-label="Fil d’Ariane" style="font-size: 14px; color: #DCEFF1"><a href="Main.dc.html" style="color: #DCEFF1; text-decoration: none">Accueil</a> / <a href="Escales.dc.html" style="color: #DCEFF1; text-decoration: none">Escales</a> / <span style="color: #FFFFFF; font-weight: 700">Signal’Montval</span></nav>
+<div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 56px; align-items: center">
+<div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="font-size: 15px; color: #E6F4F5">Projet de formation · Audit UX &amp; refonte</span>
+</div>
+<h1 style="margin: 20px 0 18px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 62px; line-height: 1.02; font-weight: 800; letter-spacing: -0.03em; text-shadow: 0 2px 18px rgba(0,0,0,0.4)">Signal’Montval</h1>
+<p style="margin: 0 0 32px; font-size: 18px; line-height: 1.7; color: #E6F4F5; text-shadow: 0 1px 10px rgba(0,0,0,0.45)">Refonte du service de signalement d’une ville, où moins de 5 % des signalements passaient par le site. Tests utilisateurs, audit, personas, cadrage et prototype Figma, pour que chacun, de 19 à 78 ans, puisse signaler un problème et suivre sa demande.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="#prototype" style="display: inline-flex; align-items: center; gap: 10px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 16px 26px">Essayer le prototype <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="ghost" href="#visite" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.7); background: rgba(255,255,255,0.1); color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 15px 24px">Feuilleter le projet <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+</div>
+<div style="position: relative; padding: 40px 0 0 40px">
+<div style="position: absolute; left: 0; top: 0; width: 46%; z-index: 0"><figure class="pol" style="margin: 0; background: #FFFFFF; padding: 10px 10px 0; border-radius: 6px; box-shadow: 0 24px 50px -18px rgba(11,42,58,0.45); transform: rotate(-7deg)">
+<img src="assets/b7608120b5c87699beb0d84d90626b2b.jpg" alt="Signal’Montval" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px">
+<figcaption style="font-family: 'Caveat', cursive; font-size: 24px; color: #0E2A3A; padding: 6px 4px 8px">Signal’Montval</figcaption>
+</figure></div>
+<div style="position: relative; z-index: 1"><div style="border-radius: 14px; overflow: hidden; border: 1px solid #E2E8EB; background: #FFFFFF; box-shadow: 0 40px 80px -30px rgba(11,79,108,0.45)">
+<div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid #E2E8EB; background: #F6F8F9">
+<span aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FF6B5A"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFB547"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #2BB3A8"></span></span>
+<span style="flex: 1; min-width: 0; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #4A6170; background: #FFFFFF; border: 1px solid #E2E8EB; border-radius: 8px; padding: 6px 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600">Dossier de soutenance · Signal’Montval</span>
+</div>
+<img src="assets/20298ac938d9cd4dbf0050e24cef3a07.jpg" alt="Aperçu : Signal’Montval" style="display: block; width: 100%; height: auto">
+</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FICHE -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 28px">
+<div style="margin-top: -44px; position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border-radius: 18px; padding: 20px 22px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45); border-top: 4px solid #C93F27"><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Modules</div><div style="margin-top: 8px; font-size: 15px; line-height: 1.5; font-weight: 500">UX design · Accessibilité · Gestion de projet</div></div>
+<div style="background: #FFFFFF; border-radius: 18px; padding: 20px 22px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45); border-top: 4px solid #0B7F84"><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Outils</div><div style="margin-top: 8px; font-size: 15px; line-height: 1.5; font-weight: 500">Figma · Excel · WebAIM · HeadingsMap · Core Web Vitals</div></div>
+<div style="background: #FFFFFF; border-radius: 18px; padding: 20px 22px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45); border-top: 4px solid #0B4F6C"><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">Rôle</div><div style="margin-top: 8px; font-size: 15px; line-height: 1.5; font-weight: 500">Projet individuel : de l’audit au prototype</div></div>
+<div style="background: #FFFFFF; border-radius: 18px; padding: 20px 22px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45); border-top: 4px solid #A35F00"><div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; color: #4A6170; font-weight: 600">École</div><div style="margin-top: 8px; font-size: 15px; line-height: 1.5; font-weight: 500">Digital Campus Paris 11ᵉ</div></div>
+</div>
+</section>
+
+<!-- RECIT -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 96px 28px 0">
+<h2 style="margin: 0px 0 30px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 40px; font-weight: 800; letter-spacing: -0.02em">Du brief au livrable</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 20px">
+<article style="background: #FFFFFF; border-radius: 22px; padding: 28px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45)">
+<div style="display: flex; align-items: center; gap: 12px"><span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #C93F27; font-weight: 600">Départ</span></div>
+<h3 style="margin: 16px 0 10px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 22px; font-weight: 700">Contexte &amp; objectifs</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A6170">En ligne depuis 2024, Signal’Montval ne recevait que 4,8 % des signalements : 75 % arrivaient encore par téléphone. Sur 2 900 visiteurs de la page, seuls 150 allaient au bout. Compte obligatoire, formulaire de 16 champs et aucun suivi décourageaient les habitants.</p>
+</article>
+<article style="background: #FFFFFF; border-radius: 22px; padding: 28px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45)">
+<div style="display: flex; align-items: center; gap: 12px"><span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #0B7F84; font-weight: 600">Trajet</span></div>
+<h3 style="margin: 16px 0 10px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 22px; font-weight: 700">Démarche</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A6170">Tests avec quatre habitants de 19 à 78 ans (un seul réussit), audit de 55 constats selon les heuristiques de Nielsen et le RGAA (20 retenus), deux personas, note de cadrage avec objectifs SMART et budget de 29 400 €, puis priorisation MoSCoW de 22 demandes.</p>
+</article>
+<article style="background: #FFFFFF; border-radius: 22px; padding: 28px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45)">
+<div style="display: flex; align-items: center; gap: 12px"><span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #0B4F6C; font-weight: 600">Arrivée</span></div>
+<h3 style="margin: 16px 0 10px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 22px; font-weight: 700">Résultats &amp; livrables</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A6170">Un parcours en quatre écrans, sans compte : 6 catégories avec pictogrammes, lieu sur une carte, photo, numéro de suivi et e-mail à chaque étape. Objectif : signaler en moins de 3 minutes, et environ 245 heures gagnées chaque année par les agents.</p>
+</article>
+</div>
+</section>
+
+<!-- VISITE -->
+<section id="visite" style="max-width: 1280px; margin: 0 auto; padding: 100px 28px 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 24px">
+<div>
+<h2 style="margin: 0px 0 6px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 40px; font-weight: 800; letter-spacing: -0.02em">Feuilletez le projet</h2>
+<p style="margin: 0; font-size: 15px; color: #4A6170">Extraits des livrables présentés en soutenance. Chaque écran est affiché en entier.</p>
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" aria-label="Écran précédent" onClick="{{prev}}" style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid #E2E8EB; background: #FFFFFF; color: #0E2A3A; cursor: pointer; font-size: 18px">←</button>
+<button type="button" onClick="{{toggle}}" style="height: 48px; padding: 0 18px; border-radius: 999px; border: 1px solid #E2E8EB; background: #FFFFFF; color: #0E2A3A; cursor: pointer; font-family: 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: 14px">{{playLabel}}</button>
+<button type="button" aria-label="Écran suivant" onClick="{{next}}" style="width: 48px; height: 48px; border-radius: 999px; border: 0; background: {{accent}}; color: #FFFFFF; cursor: pointer; font-size: 18px">→</button>
+</div>
+</div>
+<div style="border-radius: 14px; overflow: hidden; border: 1px solid #E2E8EB; background: #FFFFFF; box-shadow: 0 40px 80px -30px rgba(11,79,108,0.45)">
+<div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid #E2E8EB; background: #F6F8F9">
+<span aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FF6B5A"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFB547"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #2BB3A8"></span></span>
+<span style="flex: 1; min-width: 0; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #4A6170; background: #FFFFFF; border: 1px solid #E2E8EB; border-radius: 8px; padding: 6px 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600">Dossier de soutenance · Signal’Montval</span>
+</div>
+<div style="position: relative; aspect-ratio: 16 / 9; background: #F3F6F7">
+<sc-for list="{{slides}}" as="s" hint-placeholder-count="8">
+<img src="{{s.src}}" alt="{{s.alt}}" style="position: absolute; inset: 16px; width: calc(100% - 32px); height: calc(100% - 32px); object-fit: contain; opacity: {{s.op}}; transition: opacity 0.8s ease">
+</sc-for>
+</div>
+</div>
+<div aria-live="polite" style="margin-top: 18px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px"><span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: {{accent}}; font-weight: 600">{{cur.chap}}</span><span style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 20px; font-weight: 600">{{cur.cap}}</span></div>
+<span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 13px; color: #4A6170; font-weight: 600">{{cur.count}}</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px">
+<sc-for list="{{dots}}" as="d" hint-placeholder-count="8">
+<button type="button" aria-label="{{d.label}}" onClick="{{d.go}}" style="width: {{d.w}}; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; transition: width 0.4s ease"><span style="display: block; width: 100%; height: 4px; border-radius: 2px; background: {{d.color}}"></span></button>
+</sc-for>
+</div>
+</section>
+<section id="prototype" style="background: #EEF7F6; margin-top: 100px; padding: 90px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 40px; align-items: start">
+<div style="position: sticky; top: 100px">
+<h2 style="margin: 0px 0 14px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 40px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1">Essayez le prototype</h2>
+<p style="margin: 0 0 28px; font-size: 17px; line-height: 1.7; color: #4A6170">Mettez-vous à la place de Françoise, 78 ans : le lampadaire devant chez elle est en panne. Sur le site actuel, elle avait cherché 30 minutes avant d’appeler la mairie. Ici, sans compte ni mot de passe, le signalement se fait en quelques minutes.</p>
+<a class="btn" href="https://www.figma.com/proto/4z3Bhd5OECCXKMdc3YI7iW/Signal-Montval---Prototype?node-id=1-2&amp;p=f&amp;t=gNBGWHfI0aSv82kD-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A2" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; border-radius: 999px; padding: 16px 26px">Ouvrir le prototype Figma <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+<p style="margin: 12px 0 0; font-size: 14px; color: #4A6170">S’ouvre dans Figma, dans un nouvel onglet.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 26px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45)">
+<div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #C93F27; font-weight: 600">Parcours 1</div>
+<h3 style="margin: 6px 0 16px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 21px; font-weight: 700">Faire un nouveau signalement</h3>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5">
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">1</span><span style="padding-top: 4px">Cliquez sur « Signaler un problème ».</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">2</span><span style="padding-top: 4px">Choisissez « Éclairage public », sur fond bleu.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">3</span><span style="padding-top: 4px">Saisissez l’adresse, décrivez le problème et indiquez votre e-mail.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">4</span><span style="padding-top: 4px">Cliquez sur « Envoyer mon signalement » : la confirmation s’affiche.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">5</span><span style="padding-top: 4px">Cliquez sur « Suivre ma demande », puis revenez à l’accueil.</span></li>
+</ol>
+<p style="margin: 14px 0 0; font-size: 14px; line-height: 1.5; color: #4A6170">« Suivre ma demande » est aussi accessible directement depuis l’accueil.</p>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 26px; box-shadow: 0 14px 40px -28px rgba(11,42,58,0.45)">
+<div style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; color: #C93F27; font-weight: 600">Parcours 2</div>
+<h3 style="margin: 6px 0 16px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 21px; font-weight: 700">Appuyer un signalement déjà fait</h3>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5">
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">1</span><span style="padding-top: 4px">Cliquez sur « Signaler un problème », puis sur « Éclairage public ».</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">2</span><span style="padding-top: 4px">Saisissez l’adresse : un point ocre apparaît sur la carte.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">3</span><span style="padding-top: 4px">Dans « Déjà signalé ici », cliquez sur « + Moi aussi » : la demande part directement aux services techniques, via le logiciel Intervia.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%); color: #FFFFFF; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600">4</span><span style="padding-top: 4px">Choisissez « Suivre ma demande » ou revenez à l’accueil.</span></li>
+</ol>
+<p style="margin: 14px 0 0; font-size: 14px; line-height: 1.5; color: #4A6170">Moins de doublons, donc moins de déplacements inutiles pour les agents.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TAKEAWAY -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 100px 28px 0">
+<figure style="margin: 0; background: #FFF4E6; border-radius: 28px; padding: 44px 48px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px 40px">
+<span aria-hidden="true" style="font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 96px; line-height: 0.7; color: #C93F27">“</span>
+<blockquote style="margin: 0; flex: 1 1 520px; font-family: 'Caveat', cursive; font-size: 40px; line-height: 1.2; color: #0B4F6C">Le site n’échouait pas seulement pour les seniors : un bon parcours marche pour tout le monde.<figcaption style="margin-top: 12px; font-family: 'DM Sans', system-ui, sans-serif; font-size: 13px; color: #4A6170; font-weight: 600">Ce que je retiens</figcaption></blockquote>
+</figure>
+</section>
+
+<!-- NAV ESCALES -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 60px 28px 100px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 18px">
+<a class="card" href="Projet-Sonigo.dc.html" style="position: relative; overflow: hidden; text-decoration: none; color: #FFFFFF; border-radius: 22px; min-height: 160px; display: flex; flex-direction: column; justify-content: flex-end; padding: 22px 24px; text-align: left">
+<img class="zoom" src="assets/6b6062e69d0f057074d555d307d48fe1.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,79,108,0.2), rgba(11,79,108,0.85))"></span>
+<span style="position: relative; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; font-weight: 600">← Projet précédent</span>
+<span style="position: relative; margin-top: 6px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 24px; font-weight: 700">Sonigo</span>
+</a>
+<a class="card" href="Escales.dc.html" style="text-decoration: none; color: #FFFFFF; border-radius: 22px; min-height: 160px; display: flex; flex-direction: column; justify-content: flex-end; padding: 22px 24px; background: linear-gradient(125deg, #0B4F6C 0%, #0E8C92 55%, #2BB3A8 100%)"><span style="font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; font-weight: 600">Tous les projets</span><span style="margin-top: 6px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 24px; font-weight: 700">Tableau des départs</span></a>
+<a class="card" href="Projet-Prestige.dc.html" style="position: relative; overflow: hidden; text-decoration: none; color: #FFFFFF; border-radius: 22px; min-height: 160px; display: flex; flex-direction: column; justify-content: flex-end; padding: 22px 24px; text-align: right">
+<img class="zoom" src="assets/68ba0ab05d6518b45e55eb8d7b255811.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,79,108,0.2), rgba(11,79,108,0.85))"></span>
+<span style="position: relative; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; font-weight: 600">Projet suivant →</span>
+<span style="position: relative; margin-top: 6px; font-family: 'Sora', 'DM Sans', system-ui, sans-serif; font-size: 24px; font-weight: 700">Maison Prestige</span>
+</a>
+</div>
+</section>
+<footer style="background: #0B4F6C; color: #D6E8EE">
+<div style="max-width: 1280px; margin: 0 auto; padding: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 Sonia EL HENDI · Paris ✕ Pointe-à-Pitre</span>
+<span>Formation Chef de projet marketing digital · Digital Campus</span>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C93F27","options":["#C93F27","#0B7F84","#0B4F6C","#7A3FB8"]},"$preview":{"width":1440,"height":3900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#C93F27';
+    const B = 'assets/';
+    const S = [
+      { src: B + '6de74eacec43e0b4b5607ab4dd079ba1.jpg', chap: "Tests utilisateurs", cap: "1 testeur sur 4 réussit à signaler" },
+      { src: B + 'edefbab2912c5ee0d14c10270b30ff38.jpg', chap: "Verbatims", cap: "« Il y a tout à changer ! »" },
+      { src: B + 'ce00fae85bfb9a926c1ecd6a07520f39.jpg', chap: "Audit", cap: "55 constats relevés, 20 retenus" },
+      { src: B + '687d879497045c744e13e44c030c1a10.jpg', chap: "Audit du formulaire", cap: "16 champs obligatoires, photo refusée, pas de carte" },
+      { src: B + '438c7077e88971d708035451afd7b264.jpg', chap: "Persona", cap: "Françoise, 78 ans" },
+      { src: B + '01ae29341f40e4e35e79571f037fb6f2.jpg', chap: "MoSCoW", cap: "22 demandes priorisées" },
+      { src: B + '20298ac938d9cd4dbf0050e24cef3a07.jpg', chap: "Parcours", cap: "Françoise signale son lampadaire en moins de 5 minutes" },
+      { src: B + 'b4845af8c72a488f821c63ad12f7cbb0.jpg', chap: "Wireframes", cap: "Accueil, signalement, confirmation et suivi" }
+    ];
+    const n = S.length;
+    this.n = n;
+    const i = (this.state && this.state.i) || 0;
+    const paused = !!(this.state && this.state.paused);
+    const go = (k) => () => { this.setState({ i: k }); this.restart(paused); };
+    return {
+      accent,
+      slides: S.map((s, k) => ({ src: s.src, alt: s.chap + ' : ' + s.cap, op: k === i ? 1 : 0 })),
+      cur: { chap: S[i].chap, cap: S[i].cap, count: String(i + 1).padStart(2, '0') + ' / ' + String(n).padStart(2, '0') },
+      prev: go((i - 1 + n) % n),
+      next: go((i + 1) % n),
+      toggle: () => { const p = !paused; this.setState({ paused: p }); this.restart(p); },
+      playLabel: paused ? 'Lecture' : 'Pause',
+      dots: S.map((s, k) => ({ label: 'Écran ' + (k + 1) + ' : ' + s.chap, go: go(k), w: k === i ? '40px' : '14px', color: k === i ? accent : '#D5DEE3' }))
+    };
+  }
+  restart(paused) {
+    const n = this.n || 8;
+    clearInterval(this.timer);
+    if (paused) return;
+    this.timer = setInterval(() => this.setState((st) => ({ i: (((st && st.i) || 0) + 1) % n })), 5500);
+  }
+  componentDidMount() { this.restart(false); }
+  componentWillUnmount() { clearInterval(this.timer); }
+}
+</script>
+</body>
+</html>
